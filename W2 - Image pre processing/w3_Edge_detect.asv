@@ -1,3 +1,0 @@
-N = imfinfo('peppers.png');
-N.FileModDate
-imshow(im2gray(N));
