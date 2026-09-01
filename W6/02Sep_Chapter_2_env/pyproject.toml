@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pvch2"
+version = "0.2.0"
+description = "PlantVillage Chapter 2 experiment environment (02 Sep 2026): independent colour / grayscale / segmented pipelines."
+readme = "README.md"
+requires-python = ">=3.13"
+authors = [{ name = "IPPR Team 10" }]
+dependencies = [
+  "numpy>=2.1",
+  "opencv-python-headless>=4.10",
+  "scikit-image>=0.25",
+  "scikit-learn>=1.6",
+  "PyYAML>=6.0",
+  "Pillow>=11.0",
+  "matplotlib>=3.9",
+  "tqdm>=4.66",
+]
+
+[project.optional-dependencies]
+dl = ["torch", "torchvision", "torchinfo"]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+pvch2-verify = "pvch2.cli:verify"
+pvch2-inventory = "pvch2.cli:inventory"
+pvch2-preview = "pvch2.cli:preview"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+pvch2 = ["py.typed"]

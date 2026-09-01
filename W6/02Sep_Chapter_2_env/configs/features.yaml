@@ -1,0 +1,35 @@
+# Section 2.2. Extracted on the image of the pipeline under test.
+# Do not assume a 2.1 leaf mask unless the segmented pipeline is the run.
+
+color:
+  lab_hsv_moments: [1, 2, 3]
+  hsv_histogram:
+    H_bins: 16
+    S_bins: 8
+
+texture:
+  lbp:
+    variants:
+      - { P: 8, R: 1, method: uniform }
+      - { P: 16, R: 2, method: uniform }
+    rotation_invariant: true
+  glcm:
+    distances: [1, 3]
+    angles_rad: [0.0, 0.7853981633974483, 1.5707963267948966, 2.356194490192345]
+    properties: [contrast, homogeneity, energy, correlation]
+
+hog:
+  pixels_per_cell: [8, 8]
+  cells_per_block: [2, 2]
+  orientations: 9
+
+classifier:
+  primary: linear_svm
+  svm:
+    kernel: linear
+    class_weight: balanced
+  secondary: random_forest
+  metric: macro_f1
+
+sift_bovw:
+  enabled: false                  # PDF: expected weaker than colour+LBP

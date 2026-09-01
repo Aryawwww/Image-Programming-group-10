@@ -1,0 +1,13 @@
+# Dataset is referenced in place. Do not copy PlantVillage into this env.
+# "auto" searches PlantVillage-Dataset in ., .., and ../.. of this env
+# (covers the Windows sibling layout and the Mac W6/../.. layout).
+# Override with PVCH2_DATASET_ROOT when the dataset lives somewhere else.
+dataset_root: auto
+raw:
+  color: "raw/color"
+  grayscale: "raw/grayscale"
+  segmented: "raw/segmented"
+leaf_map: "leaf_grouping/leaf-map.json"
+leaf_maps_dir: "leaf_grouping/filtered_leafmaps"
+citation: "CITATION.cff"
+output_dir: "outputs"
