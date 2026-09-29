@@ -13,7 +13,7 @@
 - 执行状态：`artifacts/run_state.json`
 
 不要直接调用系统 Python，不要执行无版本约束的 `pip install`，不要通过临时环境变量改变 seed、线程数或后端确定性设置。
-
+114514
 ## Required Workflow
 
 1. 开始工作时读取 `artifacts/run_state.json`、`docs/PIPELINE_RUNBOOK.md` 和相关 artifact 的 `selection.json`。
