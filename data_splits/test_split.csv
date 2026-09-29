@@ -1,0 +1,376 @@
+split,filepath,label
+test,Tomato___Late_blight/29e99d11-44d0-4c6c-8183-c3e7be56ce58___RS_Late.B 7093.JPG,Tomato___Late_blight
+test,Tomato___Bacterial_spot/62b151e8-3ff6-444f-aa56-af06e198d9ed___GCREC_Bact.Sp 5971.JPG,Tomato___Bacterial_spot
+test,Tomato___Late_blight/0fca6d09-1931-4767-a195-1dd2b7cd10b7___GHLB Leaf 8 Day 12.JPG,Tomato___Late_blight
+test,Tomato___Late_blight/e114b022-a00f-4055-9ff0-ae67c6722607___RS_Late.B 5024.JPG,Tomato___Late_blight
+test,Tomato___Septoria_leaf_spot/8d370ca1-f143-4298-bede-e495da068cc0___Matt.S_CG 1315.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___Septoria_leaf_spot/2e9928ec-5f57-4587-bbc3-18e30d2938e3___JR_Sept.L.S 8373.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___Bacterial_spot/e77c7af3-35cb-496d-bc8b-34bc2344b8fc___GCREC_Bact.Sp 3545.JPG,Tomato___Bacterial_spot
+test,Tomato___healthy/a4dea30d-6551-4107-bba6-1390e74b6b0b___GH_HL Leaf 261.1.JPG,Tomato___healthy
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/3002c053-70f2-45e8-88b7-3507f07bb377___YLCV_NREC 2404.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___Bacterial_spot/58674fc9-434d-4afc-879e-712a24831266___GCREC_Bact.Sp 2991.JPG,Tomato___Bacterial_spot
+test,Tomato___Late_blight/eed357a4-620c-42ef-b626-cb3b5026abca___GHLB2 Leaf 8970.JPG,Tomato___Late_blight
+test,Tomato___Bacterial_spot/a0be793f-3831-4101-9142-69986edb313e___UF.GRC_BS_Lab Leaf 0801.JPG,Tomato___Bacterial_spot
+test,Tomato___Septoria_leaf_spot/129fba33-b39b-4c74-b45f-4e602eb7af20___Keller.St_CG 1837.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/3dd4ea12-1673-4ddc-9e9f-5fedc0b00652___YLCV_GCREC 2296.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___Septoria_leaf_spot/5e94a35b-bce1-4db7-a31d-86a73847e4c2___Matt.S_CG 1065.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___Septoria_leaf_spot/1b6fd6e2-8917-473f-9c8c-b14f639e13a9___JR_Sept.L.S 2709.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/a3d8decf-7f72-413c-a387-d3653615a8e0___YLCV_GCREC 2644.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___Septoria_leaf_spot/fdbf1c22-520c-4537-9f20-76f52fd4ae35___Matt.S_CG 6550.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___Septoria_leaf_spot/09332ad5-89d0-4ce9-84de-6bca4f10bf16___Keller.St_CG 1953.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/e7f0fe49-a91c-450d-be0b-573350bb6da4___YLCV_GCREC 5534.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/0fcbc9ec-8e9b-4a39-8204-a0a04c6f906f___UF.GRC_YLCV_Lab 09421.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/3369c284-ac18-414e-809c-0096a8242fa0___UF.GRC_YLCV_Lab 03210.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___Late_blight/3ef1e6d9-0ea8-4b1d-a2f4-a99bbc4ba66e___GHLB2 Leaf 8830.JPG,Tomato___Late_blight
+test,Tomato___Septoria_leaf_spot/b77f34e1-6fa3-41d6-aea9-b11b8e7e3a04___Matt.S_CG 0955.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___healthy/6ee48dff-5a8a-4751-8850-200575ee49b1___RS_HL 0479.JPG,Tomato___healthy
+test,Tomato___Septoria_leaf_spot/e77fea03-e748-4903-bf0d-242af509ea7e___Matt.S_CG 2536.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___Late_blight/43eb2436-bdba-4f67-8f51-d92c8f040690___GHLB2ES Leaf 141.1.JPG,Tomato___Late_blight
+test,Tomato___Late_blight/4dbcd899-49fd-4292-9931-d5857b5501df___RS_Late.B 6168.JPG,Tomato___Late_blight
+test,Tomato___Bacterial_spot/1695eefb-cffc-4dac-b7ae-40f34ad9c5db___GCREC_Bact.Sp 3065.JPG,Tomato___Bacterial_spot
+test,Tomato___healthy/6c93e40c-bd94-4583-8651-2b9d7215a392___RS_HL 0054.JPG,Tomato___healthy
+test,Tomato___healthy/92c06519-cec4-4091-9ae1-5ea8b56c89cd___GH_HL Leaf 525.JPG,Tomato___healthy
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/496b9a29-4c37-40bc-b5a8-42cc372c89e1___YLCV_GCREC 2730.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/a04cd262-ad83-468f-94c1-6142da11a28c___UF.GRC_YLCV_Lab 02876.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___healthy/b2639bc5-e165-4cdd-8557-fa73c6d4137f___RS_HL 0072.JPG,Tomato___healthy
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/24cf2c73-016b-42fe-98fb-fe21de37fcbd___UF.GRC_YLCV_Lab 02191.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___healthy/caab6cf8-07a8-422a-84e9-3311f85d2427___RS_HL 0455.JPG,Tomato___healthy
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/e2127684-aa48-4a4b-b569-1685a39ba5a3___YLCV_GCREC 2486.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/6eea288a-b8e5-4841-a305-f9f234ba48ba___UF.GRC_YLCV_Lab 08484.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___Bacterial_spot/43f97b78-04ee-4092-a909-6fd9af60d1a6___GCREC_Bact.Sp 3330.JPG,Tomato___Bacterial_spot
+test,Tomato___Bacterial_spot/c09afee4-a828-477f-af2c-00b11804364f___GCREC_Bact.Sp 6006.JPG,Tomato___Bacterial_spot
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/9637c3bf-d026-4ab3-a401-c7d79d82cbdf___UF.GRC_YLCV_Lab 09334.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___healthy/dbbde73f-e630-4799-9a08-37bd5602f1b2___GH_HL Leaf 208.JPG,Tomato___healthy
+test,Tomato___Bacterial_spot/221605c0-99da-46d8-a503-285d4c6d1e1a___GCREC_Bact.Sp 6366.JPG,Tomato___Bacterial_spot
+test,Tomato___healthy/c1413079-dfb4-41c5-b129-bc5b6b419e0e___RS_HL 0133.JPG,Tomato___healthy
+test,Tomato___Bacterial_spot/1afcd540-c746-4c02-8611-686ec35caaf5___GCREC_Bact.Sp 5654.JPG,Tomato___Bacterial_spot
+test,Tomato___healthy/87f08e15-5b2d-4d01-b83b-fd958eba02d4___GH_HL Leaf 434.2.JPG,Tomato___healthy
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/f591877b-3f56-491c-b522-8a192a92e78e___UF.GRC_YLCV_Lab 02503.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___Septoria_leaf_spot/29e8c2f4-3e72-45d6-be52-b8bec7dca2d8___Matt.S_CG 7421.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___healthy/cdfeddb6-3064-48dc-bac9-05441dedc74e___RS_HL 0323.JPG,Tomato___healthy
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/6c1e8199-bd36-498f-a722-1317d08e6805___UF.GRC_YLCV_Lab 03113.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___Septoria_leaf_spot/076b6071-1ce2-4ed1-9dcf-077dcd7640e4___JR_Sept.L.S 2468.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___Bacterial_spot/78c90a7a-a37f-44fa-bc11-38c1823a7af1___GCREC_Bact.Sp 6145.JPG,Tomato___Bacterial_spot
+test,Tomato___Septoria_leaf_spot/1dba882a-8d8b-4f5e-a6d4-18f6c58534b3___Matt.S_CG 6782.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/aba9fc82-47a2-4536-baeb-16a74b394a15___UF.GRC_YLCV_Lab 02470.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___Late_blight/7edf8e92-d212-46f4-843e-0c08bd263f73___GHLB2 Leaf 8944.JPG,Tomato___Late_blight
+test,Tomato___Septoria_leaf_spot/5218d91e-425f-41f9-bbaf-29098cb34cc7___Matt.S_CG 6218.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/e321a12f-3127-47f5-9f14-7388670a0599___YLCV_NREC 2677.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/cc181059-c0b6-49f7-a670-e237c8074e4f___UF.GRC_YLCV_Lab 08584.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___Late_blight/4435bd64-52a2-46cf-a319-a13a28571b03___GHLB2 Leaf 157.2.JPG,Tomato___Late_blight
+test,Tomato___Septoria_leaf_spot/fcd7b23f-81f6-4e31-9c8f-66dc04a44f2c___Keller.St_CG 1826.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___Late_blight/9cb4cbdd-147f-4cfe-a30a-dd003520f0dc___GHLB2 Leaf 8988.JPG,Tomato___Late_blight
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/e29ec2e5-6b23-4351-bd51-99d7e4d1316e___YLCV_NREC 2674.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___Septoria_leaf_spot/67d141c6-be7a-4f3d-9c4f-b667ca41ebd4___Keller.St_CG 1838.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___Bacterial_spot/a9d50751-cfaf-4743-93d9-25207fadb580___GCREC_Bact.Sp 3654.JPG,Tomato___Bacterial_spot
+test,Tomato___Septoria_leaf_spot/f90af7c6-85b1-4a8c-b06a-c9081e6a9f92___Keller.St_CG 1973.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___Septoria_leaf_spot/fa477e80-af35-4ef8-b16b-78e0f884f737___Matt.S_CG 2715.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___Late_blight/0e451078-be73-4e6b-b329-a7b0fa1f152b___GHLB2 Leaf 8612.JPG,Tomato___Late_blight
+test,Tomato___healthy/3e6c73ad-cfcb-4614-b927-150c2c642c9e___RS_HL 0074.JPG,Tomato___healthy
+test,Tomato___Late_blight/d2b12108-4222-4653-85f2-9d59c5929c1e___RS_Late.B 6360.JPG,Tomato___Late_blight
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/205dc547-b4f5-4d86-b9ae-c91a768e29ac___UF.GRC_YLCV_Lab 09544.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___Bacterial_spot/a2b9fd44-1a96-40ea-9c22-e46121316355___UF.GRC_BS_Lab Leaf 8664.JPG,Tomato___Bacterial_spot
+test,Tomato___healthy/316e62fa-d8a8-4451-80a8-a546c8c43511___RS_HL 9633.JPG,Tomato___healthy
+test,Tomato___Bacterial_spot/2ef1523a-213c-4c36-af0a-8473fb932452___UF.GRC_BS_Lab Leaf 0364.JPG,Tomato___Bacterial_spot
+test,Tomato___Bacterial_spot/11fedfbc-52be-4032-b884-3b2071db6590___GCREC_Bact.Sp 3060.JPG,Tomato___Bacterial_spot
+test,Tomato___Bacterial_spot/38de266d-bb02-4dea-b3d8-9c3dcefb44c0___GCREC_Bact.Sp 3756.JPG,Tomato___Bacterial_spot
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/39084a62-b048-481f-aa85-59bf129fa862___YLCV_NREC 2281.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/a632706d-3001-4084-999b-b6afbadf48d1___UF.GRC_YLCV_Lab 01337.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___healthy/283a4ff6-4a72-498d-b5fc-df970b8b4b83___RS_HL 9643.JPG,Tomato___healthy
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/d01c276a-a70d-4981-930e-d78292219f61___UF.GRC_YLCV_Lab 02057.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___healthy/9d06e189-6e39-4fb9-853b-e2ce180469a5___RS_HL 0407.JPG,Tomato___healthy
+test,Tomato___healthy/9b0e031b-27c2-4c62-8923-ccc3ce5a4048___GH_HL Leaf 401.1.JPG,Tomato___healthy
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/b9dad63a-772d-42ed-9487-d7b13ff2cb8b___YLCV_GCREC 2636.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___healthy/f1b0ad53-6f2a-44bd-9f58-da590c9cdde2___GH_HL Leaf 371.JPG,Tomato___healthy
+test,Tomato___Late_blight/2e8f61d8-0d5d-46e3-a597-ede96855a4fe___RS_Late.B 5352.JPG,Tomato___Late_blight
+test,Tomato___healthy/47362660-a262-4ffb-ae99-68b699b3ecb7___RS_HL 0006.JPG,Tomato___healthy
+test,Tomato___Bacterial_spot/86561a43-33f2-4e52-bd0f-a6ed767feef6___GCREC_Bact.Sp 6255.JPG,Tomato___Bacterial_spot
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/b77b76cf-e64f-43cb-a2dd-ad8cd1975deb___YLCV_NREC 2325.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___Late_blight/e980207c-6e67-4caf-8973-7128ca2a1c12___GHLB2 Leaf 8876.JPG,Tomato___Late_blight
+test,Tomato___Late_blight/1905cdb8-1725-4386-9d49-59f47c3e4a1b___GHLB2ES Leaf 65.JPG,Tomato___Late_blight
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/d3c0be8f-9656-4b81-83e9-42ac109339ec___UF.GRC_YLCV_Lab 03217.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/52f1ffbd-5244-4102-aaea-5e1f176f358d___UF.GRC_YLCV_Lab 03306.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___Septoria_leaf_spot/7f1a7403-f9d4-4910-9495-550a263c6e77___Matt.S_CG 7624.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___Septoria_leaf_spot/c5dda767-1685-414e-bcfe-4f0f09328c0b___JR_Sept.L.S 2521.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___Late_blight/288f203e-7996-4290-afa7-f95c0c30506a___RS_Late.B 5562.JPG,Tomato___Late_blight
+test,Tomato___Bacterial_spot/c838ca76-4670-44ef-b936-2eb00e249f52___GCREC_Bact.Sp 6370.JPG,Tomato___Bacterial_spot
+test,Tomato___healthy/a1238cae-087e-42de-824b-35a967fe43a6___RS_HL 0624.JPG,Tomato___healthy
+test,Tomato___Bacterial_spot/ae471cad-5e5b-4325-a831-bdfe5c005cab___GCREC_Bact.Sp 6323.JPG,Tomato___Bacterial_spot
+test,Tomato___Bacterial_spot/8c1a0a73-26c9-405e-8957-8dd58df6bdf4___GCREC_Bact.Sp 3738.JPG,Tomato___Bacterial_spot
+test,Tomato___Bacterial_spot/7007e815-078b-4025-8aaf-89570d8300c4___UF.GRC_BS_Lab Leaf 1203.JPG,Tomato___Bacterial_spot
+test,Tomato___healthy/bca86bca-56dd-4336-afea-5e42b5deec35___RS_HL 0197.JPG,Tomato___healthy
+test,Tomato___Late_blight/ee90e57e-7289-4dcd-af6f-a585d97628b7___RS_Late.B 7040.JPG,Tomato___Late_blight
+test,Tomato___Septoria_leaf_spot/546a14dd-fe94-4651-82bb-012f6fbf53a7___Matt.S_CG 6675.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___Septoria_leaf_spot/2996fe86-51c4-4ded-b7a4-4f0905247394___Keller.St_CG 1841.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/fbaabae5-531a-496b-ae23-590c899ee195___UF.GRC_YLCV_Lab 08494.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___Bacterial_spot/ef201af2-bb22-4c9f-bbdd-d6258f215cf6___UF.GRC_BS_Lab Leaf 1112.JPG,Tomato___Bacterial_spot
+test,Tomato___Late_blight/10019e40-277e-4d69-8dee-8c034a3752a1___GHLB2ES Leaf 62.JPG,Tomato___Late_blight
+test,Tomato___Late_blight/7f8ee689-9c51-4f8b-baa2-3ce1125b765e___GHLB2 Leaf 8569.JPG,Tomato___Late_blight
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/89fe420f-3f9a-4b1a-b19d-f866dfd0800a___UF.GRC_YLCV_Lab 01955.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___healthy/6193b998-c9ab-46fc-9ca9-249efceb9220___RS_HL 0642.JPG,Tomato___healthy
+test,Tomato___Bacterial_spot/8a19d8fe-d257-40b7-9c98-34dc3d7bc39e___GCREC_Bact.Sp 5873.JPG,Tomato___Bacterial_spot
+test,Tomato___Septoria_leaf_spot/3823a859-7570-4196-abf7-64f102d55f8d___Matt.S_CG 7740.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___Late_blight/017a9839-6097-45aa-85b0-3051db151484___RS_Late.B 5125.JPG,Tomato___Late_blight
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/7c2eeadd-b0fe-4064-a6ee-7c33159396aa___YLCV_GCREC 5355.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___Septoria_leaf_spot/ee87e5d3-617f-4530-98ec-18a8ed9ee425___Keller.St_CG 1998.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___healthy/b3ff240c-bcdd-4926-9e87-c515cd6c2971___GH_HL Leaf 409.JPG,Tomato___healthy
+test,Tomato___Bacterial_spot/d47b18fc-8e90-478a-ae2b-c9974b0edc80___GCREC_Bact.Sp 3222.JPG,Tomato___Bacterial_spot
+test,Tomato___Late_blight/69a7bc98-0c0d-4391-ad2f-2fa91a5d51ac___RS_Late.B 6986.JPG,Tomato___Late_blight
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/de981953-dabc-45f9-a156-1e942ed7ca24___UF.GRC_YLCV_Lab 01417.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___Late_blight/207dee29-3d2e-4f08-9642-ef4c932fb280___GHLB2 Leaf 8608.JPG,Tomato___Late_blight
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/7ca59adf-902b-4c6f-914d-e1ead426c8ab___YLCV_GCREC 5171.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___Late_blight/d6e9c42c-39cb-42a7-8d9b-a926fe21f926___RS_Late.B 6684.JPG,Tomato___Late_blight
+test,Tomato___Bacterial_spot/c04f4774-dbfd-4ab0-98fd-437759b1b7f7___UF.GRC_BS_Lab Leaf 9114.JPG,Tomato___Bacterial_spot
+test,Tomato___Septoria_leaf_spot/690452d3-64f5-474c-ba18-1f4e5f330da6___Matt.S_CG 7738.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___Bacterial_spot/c23fe2f1-4b93-4e4e-b55e-215b4a922e5d___GCREC_Bact.Sp 5779.JPG,Tomato___Bacterial_spot
+test,Tomato___Septoria_leaf_spot/3d42d770-69c1-421e-ae00-56f8d0bd500f___Matt.S_CG 7414.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___Septoria_leaf_spot/e0f3d05f-131f-4baf-ae8b-36abdd1fc925___Matt.S_CG 6241.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___healthy/fdbbea63-18e0-401f-8269-64ba005ab53f___RS_HL 0213.JPG,Tomato___healthy
+test,Tomato___Bacterial_spot/0f2247f4-7ffe-409c-9833-ce8a7723ee02___GCREC_Bact.Sp 6080.JPG,Tomato___Bacterial_spot
+test,Tomato___Septoria_leaf_spot/fcc9e28b-c2b2-400d-bd70-7cf4f75d8313___Matt.S_CG 7751.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___healthy/e3b5600f-9c88-4060-826f-aa7c972c9325___GH_HL Leaf 291.JPG,Tomato___healthy
+test,Tomato___Bacterial_spot/b34a1119-72d6-4c68-88f2-17ab64ee3457___GCREC_Bact.Sp 3101.JPG,Tomato___Bacterial_spot
+test,Tomato___healthy/4959798b-5c9b-4f8e-b0a0-3778259614b1___CG1.JPG,Tomato___healthy
+test,Tomato___healthy/95973ed9-f9a8-4c71-b232-432f61020fe3___GH_HL Leaf 412.JPG,Tomato___healthy
+test,Tomato___Septoria_leaf_spot/80c8fa6d-e374-40ad-8399-fdb626640e82___JR_Sept.L.S 2675.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___Septoria_leaf_spot/4ff7ff02-1fce-4994-bea2-bc46bd60fa4f___JR_Sept.L.S 8501.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___Late_blight/0172b2ff-6f6f-43e1-9a63-ea4bb2bce450___GHLB_PS Leaf 17 Day 9.jpg,Tomato___Late_blight
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/c53e9f54-0ef8-4df9-8ade-9eb90dac0d93___UF.GRC_YLCV_Lab 03127.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___healthy/438c4ac5-5409-4859-9fe4-3077af7425b2___RS_HL 0157.JPG,Tomato___healthy
+test,Tomato___Bacterial_spot/a342423d-7c62-4fcd-a9c6-d92d586b5023___GCREC_Bact.Sp 3754.JPG,Tomato___Bacterial_spot
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/e4b674d9-661c-4e26-96b2-311501d928ec___UF.GRC_YLCV_Lab 02250.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___Septoria_leaf_spot/baeeb93d-df9f-489a-a019-5adc8cf361a3___Matt.S_CG 7450.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___Septoria_leaf_spot/0cff7307-2103-4aaf-b2af-899221b15e34___Matt.S_CG 7756.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___Late_blight/dbedc9c1-d7f8-4eef-b4bf-d36689c57c60___GHLB Leaf 27 Day 12.JPG,Tomato___Late_blight
+test,Tomato___Bacterial_spot/8dbf81aa-7085-4707-9374-9be792a0fd4a___GCREC_Bact.Sp 3275.JPG,Tomato___Bacterial_spot
+test,Tomato___Late_blight/cd74e79e-b798-4eec-8e3a-1c06a1da37f2___GHLB2 Leaf 8534.JPG,Tomato___Late_blight
+test,Tomato___Septoria_leaf_spot/178dcc84-1b4a-4ca0-babc-3aff38a1d2de___Matt.S_CG 7394.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___healthy/6ca96968-d8cd-4849-a0d5-0784e585d768___RS_HL 0302.JPG,Tomato___healthy
+test,Tomato___Bacterial_spot/15d45247-ffcd-4d50-87a1-5f0527e451e9___GCREC_Bact.Sp 3763.JPG,Tomato___Bacterial_spot
+test,Tomato___Septoria_leaf_spot/ce568d1c-fb5d-4d7a-bbff-13da7d3ec8ef___Matt.S_CG 1041.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/6075fa49-0f9d-4966-8ab6-69bcf429783b___UF.GRC_YLCV_Lab 01613.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___healthy/5dd2a498-7eff-4da7-9c0f-8c394103e52c___RS_HL 0611.JPG,Tomato___healthy
+test,Tomato___Septoria_leaf_spot/0ea612c0-8416-4771-a8bb-d5d255800f94___JR_Sept.L.S 8533.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___Bacterial_spot/5512c9ea-9177-4860-8035-c4f8b2025693___GCREC_Bact.Sp 5651.JPG,Tomato___Bacterial_spot
+test,Tomato___Bacterial_spot/6322dd1e-a6fa-462c-b985-1f9188da0d95___GCREC_Bact.Sp 5972.JPG,Tomato___Bacterial_spot
+test,Tomato___Bacterial_spot/698d4680-5dca-497c-a8c9-9978d8e0052a___GCREC_Bact.Sp 6246.JPG,Tomato___Bacterial_spot
+test,Tomato___healthy/b3e24070-34b9-4dcb-8c84-026affadfb4b___GH_HL Leaf 360.JPG,Tomato___healthy
+test,Tomato___healthy/2b1cbc53-a62b-4daf-b233-8fc1d8d8c099___RS_HL 0296.JPG,Tomato___healthy
+test,Tomato___Late_blight/013f987a-9371-4763-a104-ea6f326e584b___GHLB2 Leaf 8556.JPG,Tomato___Late_blight
+test,Tomato___healthy/5b28f6a8-cf40-4f35-82ad-16470dd69bd5___RS_HL 9658.JPG,Tomato___healthy
+test,Tomato___Septoria_leaf_spot/a14b1dd0-e8ce-4c8c-82ff-0196c8507c14___JR_Sept.L.S 2522.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___Septoria_leaf_spot/796b5446-9007-427b-8ac0-2264a67569e0___Matt.S_CG 6541.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___Bacterial_spot/54f6ee80-e418-4320-b8bc-789e702c4b14___GCREC_Bact.Sp 6328.JPG,Tomato___Bacterial_spot
+test,Tomato___healthy/ce9cef60-51af-4e89-bbe7-bf463d767e99___RS_HL 0614.JPG,Tomato___healthy
+test,Tomato___Septoria_leaf_spot/45c3dbbf-94eb-4e9e-9f09-b93609f6db7d___JR_Sept.L.S 2543.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/5559cc38-c1ac-47ad-b25a-2cbb8c51df78___UF.GRC_YLCV_Lab 08502.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___healthy/d84b65fd-6841-435f-9c9f-2ba8afe2f62a___RS_HL 0541.JPG,Tomato___healthy
+test,Tomato___healthy/a8070204-763a-47f2-9b83-445c17975cdf___RS_HL 0024.JPG,Tomato___healthy
+test,Tomato___Septoria_leaf_spot/2c83508f-bec1-4962-add3-f16cf5620193___Keller.St_CG 1926.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___Bacterial_spot/1ec8d580-f7b5-481f-85af-f2370a29a330___GCREC_Bact.Sp 5620.JPG,Tomato___Bacterial_spot
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/16c545e2-7dd7-45bb-b4c4-5f5587856bc3___UF.GRC_YLCV_Lab 02311.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/54ff9e91-0737-438e-a9b0-64b266ce1868___UF.GRC_YLCV_Lab 02653.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/ecb96ffd-a70b-4739-b89e-d3a995dcdcf8___UF.GRC_YLCV_Lab 09328.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___Late_blight/06c6a302-ae34-4d38-9e4b-3a6acdd42d91___GHLB2 Leaf 9047.JPG,Tomato___Late_blight
+test,Tomato___healthy/b59425a2-e983-49c8-a9fd-61da8f38e7f3___RS_HL 0537.JPG,Tomato___healthy
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/a08beb3c-6ec8-41f5-a8de-c2f578ce4085___YLCV_NREC 2653.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___Bacterial_spot/0045ba29-ed1b-43b4-afde-719cc7adefdb___GCREC_Bact.Sp 6254.JPG,Tomato___Bacterial_spot
+test,Tomato___Bacterial_spot/8a9a8f3a-945b-4921-87a2-2532654a0092___GCREC_Bact.Sp 6059.JPG,Tomato___Bacterial_spot
+test,Tomato___Septoria_leaf_spot/1c94b8af-21b7-43b5-b6ff-a5f7a3ad0a6e___Matt.S_CG 1727.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/0a0fe942-bb9e-4384-8466-779017d00bcf___UF.GRC_YLCV_Lab 02192.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___Late_blight/7da77ecf-90a8-4e8a-b84f-6e64f5f2a9f2___GHLB2 Leaf 115.1.JPG,Tomato___Late_blight
+test,Tomato___Septoria_leaf_spot/7932cda6-c2ea-4211-9e34-5a5170687d23___Matt.S_CG 7498.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___Late_blight/39535fa7-1b38-4828-9294-da1c24aa33ef___RS_Late.B 6901.JPG,Tomato___Late_blight
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/4bef8634-a0e1-47c3-8be9-52ed47b4bb22___UF.GRC_YLCV_Lab 01582.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___Bacterial_spot/c5dfdd89-196c-464d-9ccb-33e1d500ce11___GCREC_Bact.Sp 5773.JPG,Tomato___Bacterial_spot
+test,Tomato___healthy/ae7304a4-58ad-4a45-aab4-6f18ee303a43___RS_HL 0183.JPG,Tomato___healthy
+test,Tomato___Septoria_leaf_spot/a49c7f28-4b67-4d95-b79b-26a52dc8b9e5___Matt.S_CG 7583.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___Late_blight/7fe41e8b-a062-4403-97b1-0415e2cf8fc5___RS_Late.B 7055.JPG,Tomato___Late_blight
+test,Tomato___Bacterial_spot/bd968a32-63e8-4f39-a379-c2e469622250___GCREC_Bact.Sp 3496.JPG,Tomato___Bacterial_spot
+test,Tomato___Bacterial_spot/581cabbe-38dc-4694-8180-e7ffb4786102___GCREC_Bact.Sp 3691.JPG,Tomato___Bacterial_spot
+test,Tomato___Bacterial_spot/0b233197-cd35-4031-80c2-610e7e3a046b___GCREC_Bact.Sp 6095.JPG,Tomato___Bacterial_spot
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/884c75d8-4cb8-40d3-9730-8ece772595a0___UF.GRC_YLCV_Lab 09537.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___Late_blight/dee4e35c-5c87-4922-9a1f-b97dcc40e7f1___GHLB2 Leaf 8690.JPG,Tomato___Late_blight
+test,Tomato___healthy/d03457b5-ff94-4042-a225-15714454ab4e___RS_HL 0466.JPG,Tomato___healthy
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/fdce96d3-64ce-49a6-ade4-1f812fef12f8___YLCV_GCREC 5181.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___Late_blight/e33f0c2f-ff87-42e2-a31f-aaf232e67e10___RS_Late.B 5231.JPG,Tomato___Late_blight
+test,Tomato___Late_blight/f7d235fa-e0ef-4475-88d2-3bfa79f1ab6f___RS_Late.B 7059.JPG,Tomato___Late_blight
+test,Tomato___Septoria_leaf_spot/cc2c7bfd-1c41-470d-91e6-e899126483e7___Matt.S_CG 7387.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/ac076892-7775-413e-af1f-5d18a0c6eb66___UF.GRC_YLCV_Lab 02811.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___healthy/5df79085-2c00-41d6-ac0f-33a831a16d89___RS_HL 9634.JPG,Tomato___healthy
+test,Tomato___Bacterial_spot/8282af2e-63e1-4522-afed-d9a5210d30ec___GCREC_Bact.Sp 5898.JPG,Tomato___Bacterial_spot
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/facfa837-4939-41a1-8eb5-335d03a10d41___UF.GRC_YLCV_Lab 09427.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___Bacterial_spot/4d02e3e4-c583-402a-adc0-b258c8a3384f___UF.GRC_BS_Lab Leaf 0287.JPG,Tomato___Bacterial_spot
+test,Tomato___Late_blight/cb11b3a4-a1f5-43a2-a7ff-399d7674b708___GHLB_PS Leaf 2.2 Day 18.jpg,Tomato___Late_blight
+test,Tomato___Bacterial_spot/a64426cf-07b4-492c-b1fa-e7368a8f0cb8___GCREC_Bact.Sp 5601.JPG,Tomato___Bacterial_spot
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/4501c229-ae5f-465e-b042-50825a7e640c___UF.GRC_YLCV_Lab 08507.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/75b2e6cc-9a7d-42b8-b6d8-73532f0503bb___YLCV_NREC 2366.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___Late_blight/0d98a9eb-18e7-47e7-9010-196189bae113___RS_Late.B 5047.JPG,Tomato___Late_blight
+test,Tomato___Bacterial_spot/2a377230-f904-4646-95da-76e242051242___GCREC_Bact.Sp 3085.JPG,Tomato___Bacterial_spot
+test,Tomato___healthy/c9f92d4b-9d9c-4932-ba1b-bc290987c154___RS_HL 0350.JPG,Tomato___healthy
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/5a0b78a3-79c2-4c0b-a09a-27985172a050___YLCV_NREC 2413.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___Late_blight/0c47de5b-adbe-479f-8ccf-5b8c530c32f8___RS_Late.B 6312.JPG,Tomato___Late_blight
+test,Tomato___Late_blight/46ae5fef-ca7d-4f8d-86dc-7906bfcbde9f___RS_Late.B 5092.JPG,Tomato___Late_blight
+test,Tomato___healthy/c296246d-42ab-4274-9037-df2470e2d3a5___RS_HL 0085.JPG,Tomato___healthy
+test,Tomato___Septoria_leaf_spot/296f4660-5675-43b8-8b1f-20e8e9b228b7___JR_Sept.L.S 2612.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___healthy/4ae80701-db36-4003-a20c-925d66bdfb68___RS_HL 0602.JPG,Tomato___healthy
+test,Tomato___Bacterial_spot/f16e39a5-a50c-4378-a4f1-fe8f3aecf2cb___GCREC_Bact.Sp 3644.JPG,Tomato___Bacterial_spot
+test,Tomato___Bacterial_spot/d8a64b79-e21e-4158-9d9d-47bd6e44fba0___GCREC_Bact.Sp 3594.JPG,Tomato___Bacterial_spot
+test,Tomato___Septoria_leaf_spot/5e23a1a8-d7b8-4bf4-9f02-941159d8ed44___JR_Sept.L.S 8382.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___Late_blight/c59952b7-66e1-484d-a2e2-d240e7b12680___GHLB2 Leaf 8553.JPG,Tomato___Late_blight
+test,Tomato___healthy/0d3691ab-5413-4313-870e-9e5d2faf33ea___RS_HL 9958.JPG,Tomato___healthy
+test,Tomato___healthy/92d04528-2709-4cc0-8e98-bdfe2ef97143___RS_HL 9808.JPG,Tomato___healthy
+test,Tomato___Bacterial_spot/513411b7-3388-4d3f-b1d2-6fe67b11a5ec___GCREC_Bact.Sp 5814.JPG,Tomato___Bacterial_spot
+test,Tomato___Bacterial_spot/f4304000-5523-4fc6-93e4-9e570a1d237d___GCREC_Bact.Sp 5689.JPG,Tomato___Bacterial_spot
+test,Tomato___Bacterial_spot/6e5046d4-95c4-4650-a31e-4ac145669433___GCREC_Bact.Sp 5842.JPG,Tomato___Bacterial_spot
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/e14de8d0-dea6-4d96-b9f3-6b0355ef106b___UF.GRC_YLCV_Lab 01743.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___Late_blight/d519ec29-c557-4ef7-b572-a954c6ec4187___GHLB2 Leaf 9007.JPG,Tomato___Late_blight
+test,Tomato___healthy/57b5d4cd-150b-4441-a535-8176fc1f97d7___GH_HL Leaf 197.1.JPG,Tomato___healthy
+test,Tomato___Septoria_leaf_spot/95968140-306b-45b7-9bb0-bb475995d29c___JR_Sept.L.S 2580.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___healthy/45b3e6ad-f79c-4132-9bb5-9e9d26cbdfce___RS_HL 9908.JPG,Tomato___healthy
+test,Tomato___healthy/e2f520b1-ac21-445b-9a3f-cb6e506e3044___RS_HL 0381.JPG,Tomato___healthy
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/357c7d95-3093-4cbf-abfa-c45a061db7a4___UF.GRC_YLCV_Lab 01440.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___Bacterial_spot/6b30245b-6c88-4cdb-b170-96bcba1212c4___UF.GRC_BS_Lab Leaf 8765.JPG,Tomato___Bacterial_spot
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/1afbcb6f-91b5-444d-a383-2f32223b6bf0___YLCV_GCREC 2184.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___healthy/1ca23194-53c1-44a9-973a-39aa073f4a33___RS_HL 0058.JPG,Tomato___healthy
+test,Tomato___healthy/da10b674-6bd2-4e1f-ba50-f08caac7a2ec___RS_HL 9742.JPG,Tomato___healthy
+test,Tomato___Late_blight/1350ac99-ea6a-43a2-8ab5-178219b286ba___GHLB2 Leaf 8673.JPG,Tomato___Late_blight
+test,Tomato___Bacterial_spot/b8e606e2-0630-453f-8688-b4350feb2bce___GCREC_Bact.Sp 3033.JPG,Tomato___Bacterial_spot
+test,Tomato___Late_blight/a5278b93-6815-488a-b359-27edb3ff7220___RS_Late.B 5381.JPG,Tomato___Late_blight
+test,Tomato___Late_blight/d82b634e-9a19-497b-b698-aaf100d622a1___GHLB_PS Leaf 24 Day 13.jpg,Tomato___Late_blight
+test,Tomato___Late_blight/dbb9fbf0-e196-4730-ac80-859b7dd74188___RS_Late.B 5498.JPG,Tomato___Late_blight
+test,Tomato___Septoria_leaf_spot/0286577f-36c8-4b0d-bbf5-404993cd089d___Matt.S_CG 1422.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___Bacterial_spot/dff2f22f-6d7a-4331-bd7a-902e13212348___GCREC_Bact.Sp 5924.JPG,Tomato___Bacterial_spot
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/66bee1f0-5737-444a-9698-1c9c0217bbb5___YLCV_NREC 2794.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___healthy/d3862da2-c8a4-4a40-98db-7148e5e7d2c9___RS_HL 9906.JPG,Tomato___healthy
+test,Tomato___healthy/98e0a217-023f-45ad-a1b7-3719a5fdea49___GH_HL Leaf 283.JPG,Tomato___healthy
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/c8ff3917-03e9-4a62-928f-bcd72979a041___YLCV_NREC 2732.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___Bacterial_spot/771d095e-7965-45ff-8242-60220da372e7___GCREC_Bact.Sp 3777.JPG,Tomato___Bacterial_spot
+test,Tomato___Bacterial_spot/4d8ed094-fe5e-472d-9787-5a681be52463___UF.GRC_BS_Lab Leaf 8590.JPG,Tomato___Bacterial_spot
+test,Tomato___Bacterial_spot/a3666572-94a1-4cc7-8caa-f7e43a1d64a4___GCREC_Bact.Sp 5909.JPG,Tomato___Bacterial_spot
+test,Tomato___Late_blight/69fff432-3c80-4202-8e8a-7fed08ec0baa___RS_Late.B 6825.JPG,Tomato___Late_blight
+test,Tomato___Late_blight/747a2385-2777-445a-b215-7a14a5c0135c___RS_Late.B 7111.JPG,Tomato___Late_blight
+test,Tomato___healthy/fcfb486e-63dc-405c-8a17-0551e5f76959___RS_HL 9663.JPG,Tomato___healthy
+test,Tomato___Septoria_leaf_spot/47540ec0-31bf-4ad5-84e9-601d0d0829e4___Matt.S_CG 6002.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___Late_blight/c0b62c7a-4b0c-43d6-80d9-d5c6eef43325___RS_Late.B 6114.JPG,Tomato___Late_blight
+test,Tomato___healthy/69a348e0-b426-42bd-ba09-a8bb067430e5___RS_HL 0016.JPG,Tomato___healthy
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/6cddeaab-6f47-475a-886f-c8947d314788___UF.GRC_YLCV_Lab 02714.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___Bacterial_spot/01375198-62af-4c40-bddf-f3c11107200b___GCREC_Bact.Sp 5914.JPG,Tomato___Bacterial_spot
+test,Tomato___Septoria_leaf_spot/56091676-e2c1-43e7-aeb2-7621b0ce5d8f___Matt.S_CG 6840.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___Bacterial_spot/a6bbc7a3-0281-4fcc-b480-0917f3416908___UF.GRC_BS_Lab Leaf 9054.JPG,Tomato___Bacterial_spot
+test,Tomato___Late_blight/7d8f07cb-cb5b-4c4a-97f9-224258af8343___GHLB2 Leaf 8791.JPG,Tomato___Late_blight
+test,Tomato___Septoria_leaf_spot/51357363-ec5f-4e60-a8ad-43911cd15c16___Matt.S_CG 7854.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___Bacterial_spot/c54f03c5-9eef-4036-bff3-49b3a3867b88___UF.GRC_BS_Lab Leaf 9279.JPG,Tomato___Bacterial_spot
+test,Tomato___Late_blight/d45e9f86-2819-4c41-886c-73b7012674b3___GHLB Leaf 2 Day 16 .JPG,Tomato___Late_blight
+test,Tomato___Late_blight/fb584346-7e1d-46d6-ae0b-365b6ccad7ce___GHLB2 Leaf 8981.JPG,Tomato___Late_blight
+test,Tomato___Late_blight/27616ae1-2960-4aeb-a03b-91607439eaa0___RS_Late.B 5983.JPG,Tomato___Late_blight
+test,Tomato___Septoria_leaf_spot/47a6059f-5127-4e38-88c9-47c6c9ce35f1___Matt.S_CG 7707.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___healthy/df35d1fb-978c-4aeb-9d6f-e7da242c81b8___RS_HL 0515.JPG,Tomato___healthy
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/af03a2ca-fcd7-460c-a21b-8e1464a5d1bd___YLCV_GCREC 2182.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___Bacterial_spot/25a94cb1-a32d-4da4-a379-4d5732fb6f5e___GCREC_Bact.Sp 3615.JPG,Tomato___Bacterial_spot
+test,Tomato___Septoria_leaf_spot/e286fcac-d0a5-4333-bba7-9ddcbaaaf17c___JR_Sept.L.S 8521.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___healthy/2a089ff8-0fcf-4b18-b746-f997e3b18065___GH_HL Leaf 456.1.JPG,Tomato___healthy
+test,Tomato___Septoria_leaf_spot/7f851bf4-b472-4dc3-b7d5-23e877cf6547___Matt.S_CG 7802.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___Late_blight/989d984b-eaef-4ae1-a850-c2ae65961bdf___GHLB2 Leaf 9026.JPG,Tomato___Late_blight
+test,Tomato___healthy/1a308834-fdd7-4121-ae03-5736d8d52e26___RS_HL 9689.JPG,Tomato___healthy
+test,Tomato___Late_blight/f86cfe1b-5f7f-4f93-b54b-1f39d1c1e323___GHLB2 Leaf 8625.JPG,Tomato___Late_blight
+test,Tomato___Late_blight/4b6307a8-d60b-4e45-a8b4-5e1cd50f2a62___GHLB2 Leaf 8588.JPG,Tomato___Late_blight
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/c38552a0-48b7-4e3d-b4ba-7ea187372c10___YLCV_GCREC 5359.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___Late_blight/5fe7a356-5447-4da3-afc8-f93a11250305___GHLB2ES Leaf 67.JPG,Tomato___Late_blight
+test,Tomato___Late_blight/1b2756ef-4fa0-410a-8fe5-a8b699d3553e___GHLB2 Leaf 156.2.JPG,Tomato___Late_blight
+test,Tomato___healthy/a6e38349-62a4-43e6-bf92-84bc17e6d8eb___GH_HL Leaf 485.1.JPG,Tomato___healthy
+test,Tomato___Bacterial_spot/86bcf005-a793-4d1f-a767-99548b4c3aa6___GCREC_Bact.Sp 3131.JPG,Tomato___Bacterial_spot
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/4c8a1262-55e1-452c-86c5-5cb1f37b8109___YLCV_NREC 2852.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/1aaf8680-14bf-494c-80e7-808f0d3730df___YLCV_GCREC 5151.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/9aa335d3-ab63-4784-9fc3-21b2b6e6178b___YLCV_NREC 0059.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___Bacterial_spot/3cd5b241-d5f1-4ae7-92ea-447613dac98a___GCREC_Bact.Sp 3561.JPG,Tomato___Bacterial_spot
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/67907001-4326-4dcf-b60a-d9a59ffeb767___YLCV_GCREC 2167.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/e97ef3b1-710a-4248-a660-30a8a3e4e3c4___YLCV_GCREC 2078.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___Bacterial_spot/a91426e9-ff5c-4b53-8d08-b3a0e0fcb6e8___UF.GRC_BS_Lab Leaf 9004.JPG,Tomato___Bacterial_spot
+test,Tomato___Septoria_leaf_spot/740caf75-7903-44ec-ac47-c8a684736c8a___Keller.St_CG 2005.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/887a71d2-e084-4498-95e4-6034257cee62___UF.GRC_YLCV_Lab 01463.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___healthy/6200ddc6-ea83-42e0-9936-4f82cfa14a1f___RS_HL 9976.JPG,Tomato___healthy
+test,Tomato___Late_blight/6f52294c-e947-4fdc-b818-60b1d47beb06___RS_Late.B 6231.JPG,Tomato___Late_blight
+test,Tomato___Septoria_leaf_spot/e0bd1520-369e-4884-85a5-46dac6268e7a___Matt.S_CG 7709.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/41a298af-bb2d-4870-8a7e-a02f26d46187___UF.GRC_YLCV_Lab 08454.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/9a4c43d3-017b-4915-9aa6-c4e4d9cd01d6___YLCV_GCREC 5212.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___Late_blight/0418161a-871a-4d36-b988-c95f89e0feaf___RS_Late.B 7063.JPG,Tomato___Late_blight
+test,Tomato___healthy/c6d62e0c-15e0-4e99-8dbd-40e8f7181131___RS_HL 9954.JPG,Tomato___healthy
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/28e6031f-e23e-451b-9f44-12bec70ca2eb___YLCV_NREC 2070.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___Late_blight/974a15f0-913a-41ab-b5a4-30015f159902___GHLB2 Leaf 8792.JPG,Tomato___Late_blight
+test,Tomato___Septoria_leaf_spot/b6b5c469-9b5a-4b91-ac32-c11f1a9fc8df___Matt.S_CG 2503.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___Septoria_leaf_spot/4d0c8277-60cc-4c70-862c-6abc58e6de4c___Keller.St_CG 1854.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___Late_blight/7c163fda-ae67-4733-8fe3-f59d8ab20a5a___GHLB2 Leaf 8805.JPG,Tomato___Late_blight
+test,Tomato___Late_blight/d28bd097-8584-4269-a82b-43d6f5df787b___RS_Late.B 4832.JPG,Tomato___Late_blight
+test,Tomato___Septoria_leaf_spot/75766b07-f03c-4c54-bd34-05fecb240dbf___Matt.S_CG 7466.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___Septoria_leaf_spot/52db895b-cdf5-4f06-8da7-d24c5701be62___Matt.S_CG 2687.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___Late_blight/7525f169-671f-4ec6-95f2-5bb54b6fd14d___GHLB Leaf 2.4 Day 13.JPG,Tomato___Late_blight
+test,Tomato___healthy/c59a5a86-2645-49e0-a6e0-c9e8112f95d5___GH_HL Leaf 166.1.JPG,Tomato___healthy
+test,Tomato___Bacterial_spot/a54fa73d-5d09-4cfd-a796-75112b088611___GCREC_Bact.Sp 3581.JPG,Tomato___Bacterial_spot
+test,Tomato___Bacterial_spot/c10643e1-3d5a-40f6-9357-57aadd3d6721___GCREC_Bact.Sp 3727.JPG,Tomato___Bacterial_spot
+test,Tomato___Late_blight/e2acf01a-92f6-47b2-bc21-e830899f9f0b___GHLB2 Leaf 95.2.JPG,Tomato___Late_blight
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/d0796bf3-84c1-4d44-b59e-fb7779bb80fd___UF.GRC_YLCV_Lab 01598.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___healthy/20b835ac-a3bb-48ce-bb0d-5eb9a0d6ca56___RS_HL 9772.JPG,Tomato___healthy
+test,Tomato___healthy/791d2730-66b2-418b-abe0-548208783e44___RS_HL 0589.JPG,Tomato___healthy
+test,Tomato___Septoria_leaf_spot/0af9f990-ad92-4411-8623-4498ca4805ce___Keller.St_CG 1942.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___Bacterial_spot/482ef065-ba2f-4492-b215-9a60138a0047___GCREC_Bact.Sp 3090.JPG,Tomato___Bacterial_spot
+test,Tomato___Septoria_leaf_spot/7d3e0bf0-b53a-46ec-b7e8-7429215079fb___Matt.S_CG 2685.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___Septoria_leaf_spot/ea76488a-600f-477a-9d0a-17e1bb368987___Matt.S_CG 6048.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___Late_blight/89996998-a74f-46f5-8e5f-790a66dbd652___GHLB2 Leaf 8826.JPG,Tomato___Late_blight
+test,Tomato___Septoria_leaf_spot/aa233fb1-e0b7-45cc-a5f3-a163b703299e___JR_Sept.L.S 2718.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___healthy/9630e186-4b6c-492b-b450-a30bd7fd7fcb___GH_HL Leaf 322.1.JPG,Tomato___healthy
+test,Tomato___healthy/8a4cf703-385a-4c50-9ce2-a751ae6334e1___RS_HL 9963.JPG,Tomato___healthy
+test,Tomato___Septoria_leaf_spot/9e2195c1-10fe-4dc8-8552-e2c04cb8e085___JR_Sept.L.S 2532.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___healthy/beb8ecc5-3283-430e-b598-343f6754a752___GH_HL Leaf 328.JPG,Tomato___healthy
+test,Tomato___Late_blight/ea727260-767f-4f18-802f-a8105d82d912___RS_Late.B 6245.JPG,Tomato___Late_blight
+test,Tomato___Late_blight/f336431f-8e79-4ff6-9afd-03bacf1bfaf2___RS_Late.B 5521.JPG,Tomato___Late_blight
+test,Tomato___healthy/1e1aa3d8-d12f-47e1-b316-b8656ab3f2b6___RS_HL 0075.JPG,Tomato___healthy
+test,Tomato___Late_blight/005e3b43-9050-47da-9498-f9ecdcc703b3___RS_Late.B 5104.JPG,Tomato___Late_blight
+test,Tomato___Bacterial_spot/e0d9aef6-cce9-4ca0-9af6-ea44e9985cdf___GCREC_Bact.Sp 5847.JPG,Tomato___Bacterial_spot
+test,Tomato___Septoria_leaf_spot/f1e6fb1c-fcd6-4164-963b-0cc10f1bc218___Matt.S_CG 7506.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___healthy/6555b55c-78bc-4391-88ed-65b596fc7e76___GH_HL Leaf 441.JPG,Tomato___healthy
+test,Tomato___Late_blight/1f73406a-14e8-4be2-8450-9379d4f9b2b5___GHLB2 Leaf 9062.JPG,Tomato___Late_blight
+test,Tomato___healthy/4e67dd9d-8a92-4b30-bb08-2e30d34acde7___RS_HL 0245.JPG,Tomato___healthy
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/dd46a8ac-8b6d-47cd-b52f-064ac08730b8___YLCV_GCREC 2416.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___Septoria_leaf_spot/8c4da308-2be0-4f8b-8899-dac9eb728ad5___Matt.S_CG 1438.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___Septoria_leaf_spot/a7c4ec00-e9fb-4f44-af56-5bb6e7b73e3c___Matt.S_CG 0978.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___Septoria_leaf_spot/411a47e8-e401-41c3-a183-42dad13aaa9a___Matt.S_CG 7742.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___Septoria_leaf_spot/5f6a639a-a545-4778-b5e8-c45a62cacfe2___Matt.S_CG 0812.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___healthy/630ae481-49e7-470c-ad05-177132a6648a___RS_HL 0178.JPG,Tomato___healthy
+test,Tomato___Septoria_leaf_spot/009bb542-f0c0-40f2-98a7-f547c5adec45___Matt.S_CG 1355.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___healthy/ef55e589-0ad8-4602-be35-e0ee6aa33b8a___GH_HL Leaf 300.JPG,Tomato___healthy
+test,Tomato___Septoria_leaf_spot/efea9c03-36aa-4c64-b376-22343fb6803f___Matt.S_CG 2779.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/3f2be9e5-4587-4559-8b49-7cad446c4d98___YLCV_GCREC 2733.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___Late_blight/1498c064-8f74-4706-bf27-4761c24b72bd___RS_Late.B 5120.JPG,Tomato___Late_blight
+test,Tomato___Bacterial_spot/e4df0a0f-a7cf-4797-a888-9f28d916bccd___GCREC_Bact.Sp 5870.JPG,Tomato___Bacterial_spot
+test,Tomato___Septoria_leaf_spot/da6283cc-b996-4b2d-9934-716a7efb8f38___Matt.S_CG 6720.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/ca5284a9-b35e-4836-9e5b-ba27bdbeb6da___UF.GRC_YLCV_Lab 09583.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___Bacterial_spot/befc4ca2-a878-4f85-b983-c1506a4a1a69___GCREC_Bact.Sp 5883.JPG,Tomato___Bacterial_spot
+test,Tomato___Late_blight/7733f764-a68f-4221-ae43-c096f03ce5d3___RS_Late.B 5985.JPG,Tomato___Late_blight
+test,Tomato___Bacterial_spot/94096d9a-28b6-48b8-a7c4-8b4fa2885561___UF.GRC_BS_Lab Leaf 0213.JPG,Tomato___Bacterial_spot
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/5ab94c97-e072-403a-a2b4-23171357cb5f___UF.GRC_YLCV_Lab 01561.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___Bacterial_spot/e4dad7d3-b043-4dc9-9b41-0df12c1a6823___GCREC_Bact.Sp 5822.JPG,Tomato___Bacterial_spot
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/19ead445-c37c-4a22-b3fb-02510e66b553___UF.GRC_YLCV_Lab 01388.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___Septoria_leaf_spot/22368f32-693c-4a7f-b235-76f020778d18___Matt.S_CG 6918.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___Late_blight/54924dfc-c51a-426d-8f0e-d282fa7e8fd4___RS_Late.B 6481.JPG,Tomato___Late_blight
+test,Tomato___healthy/d8ce2a81-c366-4a88-bde3-ee9a98e1e30c___RS_HL 0036.JPG,Tomato___healthy
+test,Tomato___Septoria_leaf_spot/ac3e0cba-bf42-4cd4-84b7-4267e8d84dc8___JR_Sept.L.S 2639.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___Late_blight/b694de0e-542c-4b7a-b322-30cea130719d___GHLB2 Leaf 8720.JPG,Tomato___Late_blight
+test,Tomato___healthy/debe033e-a878-46dc-8336-8bc25811df35___GH_HL Leaf 303.JPG,Tomato___healthy
+test,Tomato___Late_blight/e5d1a9ef-23a4-45ee-ae3d-62644b71d803___RS_Late.B 5412.JPG,Tomato___Late_blight
+test,Tomato___Bacterial_spot/a6d6640b-c086-44f5-a53f-8cb59f72a7b4___GCREC_Bact.Sp 5886.JPG,Tomato___Bacterial_spot
+test,Tomato___healthy/8140c767-937d-450c-8070-2936aeb73834___GH_HL Leaf 439.1.JPG,Tomato___healthy
+test,Tomato___Bacterial_spot/fa0a336a-ddda-4571-9fad-d0331280640a___GCREC_Bact.Sp 3845.JPG,Tomato___Bacterial_spot
+test,Tomato___healthy/0971aa89-8f72-4f66-b4ee-dceca73add54___GH_HL Leaf 318.JPG,Tomato___healthy
+test,Tomato___Septoria_leaf_spot/e26e353d-f3fa-4e2a-912e-8caabba7f900___Matt.S_CG 0744.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___Late_blight/176dc34e-840a-40ae-889f-4e945d0de77d___GHLB2 Leaf 9000.JPG,Tomato___Late_blight
+test,Tomato___healthy/918886d9-62bf-46a4-97f9-0afe76641b25___GH_HL Leaf 365.1.JPG,Tomato___healthy
+test,Tomato___Late_blight/d0badc95-d04c-457b-8db8-aa6e198f4bd6___GHLB Leaf 10 Day 6.jpeg,Tomato___Late_blight
+test,Tomato___healthy/8858ed06-2e1b-4a4a-bd16-e4425ae62312___GH_HL Leaf 523.1.JPG,Tomato___healthy
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/82b4c1cb-7869-4a81-9df6-c8dcb222193a___YLCV_GCREC 2780.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/a8fc1db5-0074-426e-a9cc-d695876ae8a6___YLCV_NREC 2223.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___Septoria_leaf_spot/eb26346a-ab63-4741-aad4-c84c36d17d5e___JR_Sept.L.S 8440.JPG,Tomato___Septoria_leaf_spot
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/b68f33d4-ea4b-4756-8bad-3c2d8dabb9c0___UF.GRC_YLCV_Lab 08430.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___Tomato_Yellow_Leaf_Curl_Virus/548948f4-0c1b-4deb-8f13-c0a5c9134f52___UF.GRC_YLCV_Lab 09502.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+test,Tomato___Bacterial_spot/bea776af-8c63-4376-a7f2-7cbd0e15e743___GCREC_Bact.Sp 3631.JPG,Tomato___Bacterial_spot
+test,Tomato___Bacterial_spot/fcff6ccd-294d-481f-affb-815097ed74dc___GCREC_Bact.Sp 3115.JPG,Tomato___Bacterial_spot

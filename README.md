@@ -11,9 +11,9 @@ The MobileNet implementation must use the same dataset subset, leaf-grouped data
 - Dataset: [mohanty/PlantVillage](https://huggingface.co/datasets/mohanty/PlantVillage)
 - Configuration: original RGB images (`color`)
 - Scope: one healthy tomato class and four tomato disease classes
-- Target dataset size: approximately 3,000 to 5,000 images
-- Split: approximately 64% training, 16% validation, and 20% testing
-- Grouping rule: images with the same `leaf_id` must remain in the same split
+- Dataset size: 3,750 images, with 750 images from each selected class
+- Split: 80% training, 10% validation, and 10% testing
+- Split implementation: the same two-stage stratified `train_test_split` procedure used by the Custom CNN pipeline
 - Random seed: `42`
 - Data augmentation: training split only
 - Model selection: validation split only
@@ -25,19 +25,20 @@ The final model will be evaluated with accuracy, macro precision, macro recall, 
 
 - [x] Confirmed the PlantVillage data source
 - [x] Selected MobileNetV3-Small as the transfer-learning architecture
-- [x] Agreed on a leaf-grouped train/validation/test strategy
+- [x] Reused the Custom CNN sampling and train/validation/test procedure
 - [x] Defined the responsibilities of the two MobileNet team members
 - [x] Created the `mobileNet` development branch
-- [ ] Confirm the five tomato classes with the full team
-- [ ] Create and save the shared dataset split manifest
-- [ ] Implement image preprocessing and training-only augmentation
+- [x] Confirmed the five tomato classes used by the Custom CNN pipeline
+- [x] Created the balanced 750-image-per-class subset
+- [x] Created and verified the train, validation, and test manifests
+- [x] Adapted image preprocessing and training-only augmentation for MobileNetV3-Small
 - [ ] Implement frozen-backbone training
 - [ ] Implement partial fine-tuning
 - [ ] Implement the shared evaluation functions
 - [ ] Run the original and robustness test sets
 - [ ] Generate figures, tables, and report material
 
-No model-training results are available yet. Results will be added only after the shared dataset split and experimental settings have been finalised.
+No model-training results are available yet. Results will be added after the MobileNetV3-Small training environment and model settings have been finalised.
 
 ## Team Responsibilities
 
@@ -93,7 +94,7 @@ Shuhui and Alicia will jointly:
 ## Reproducibility Rules
 
 1. Do not create an independent random split for MobileNet.
-2. Do not allow the same `leaf_id` to appear in more than one split.
+2. Reuse the committed CSV manifests instead of sampling or splitting the images again.
 3. Do not augment validation or test images.
 4. Do not use test results to select hyperparameters or checkpoints.
 5. Run robustness testing only after the final model configuration has been selected.
