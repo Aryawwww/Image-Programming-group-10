@@ -1,0 +1,281 @@
+{
+  "spec_version": "1.0.0",
+  "project_id": "pv_tomato_4class_a1",
+  "seed": 42177,
+  "path_resolution": {
+    "base": "project_root",
+    "project_root_marker": "pyproject.toml"
+  },
+  "determinism": {
+    "mode": "strict",
+    "python_hash_seed": 42177,
+    "deterministic_algorithms": true,
+    "deterministic_warn_only": false,
+    "automatic_mixed_precision": false,
+    "allow_tf32": false,
+    "torch_compile": false,
+    "cpu_threads": 1,
+    "dataloader_workers": 0,
+    "dataloader_shuffle": false,
+    "pin_memory": false
+  },
+  "dataset": {
+    "provider": "huggingface",
+    "repo_id": "mohanty/PlantVillage",
+    "repo_type": "dataset",
+    "revision": "afb5ce38128c7bac085b31d499d28b631ef8fc80",
+    "archive_path": "data.zip",
+    "source_train_list": "splits/color_train.txt",
+    "source_test_list": "splits/color_test.txt",
+    "leaf_map_path": "leaf_grouping/leaf-map.json",
+    "image_variant": "color",
+    "classes_file": "configs/classes.json",
+    "selected_count_per_class": {
+      "train": 630,
+      "val": 135,
+      "test": 135
+    },
+    "validation_group_selection": {
+      "source_pool": "official_train",
+      "rank_namespace": "pv-a1-v1/val-group",
+      "minimum_images_per_class": 135
+    },
+    "image_selection": {
+      "rank_namespace": "pv-a1-v1/sample"
+    },
+    "holdout_exclusions": [
+      {
+        "relative_path": "raw/color/Tomato___healthy/050e7bff-2f2d-4c92-9422-05ce93f1d5a9___RS_HL 0097.JPG",
+        "reason": "pre_gate_model_reload_diagnostic_2026-08-28"
+      }
+    ],
+    "canonical_manifest": "data/manifests/manifest.jsonl",
+    "human_manifest": "data/manifests/manifest.csv",
+    "class_mapping": "data/manifests/classes.json",
+    "decode": {
+      "library": "Pillow",
+      "exif_transpose": true,
+      "output_mode": "RGB",
+      "truncated_images": "fail",
+      "invalid_images": "fail"
+    }
+  },
+  "common_deep_input": {
+    "implementation": "torchvision.transforms.functional",
+    "resize_shorter_side": 256,
+    "center_crop": [224, 224],
+    "interpolation": "bilinear",
+    "antialias": true,
+    "tensor_dtype": "float32",
+    "value_range_before_normalization": [0.0, 1.0],
+    "normalization_mean": [0.485, 0.456, 0.406],
+    "normalization_std": [0.229, 0.224, 0.225]
+  },
+  "stateless_train_augmentation": {
+    "enabled": true,
+    "implementation": "torchvision.transforms.functional",
+    "seed_namespace": "pv-a1-v1/augmentation",
+    "epoch_indexing": "zero_based",
+    "operation_order": [
+      "resize_shorter_side",
+      "center_crop",
+      "horizontal_flip",
+      "rotation",
+      "brightness",
+      "contrast",
+      "to_tensor",
+      "normalize"
+    ],
+    "horizontal_flip_probability": 0.5,
+    "rotation_degrees": [-15.0, 15.0],
+    "rotation_interpolation": "bilinear",
+    "rotation_expand": false,
+    "rotation_fill_rgb": [0, 0, 0],
+    "brightness_factor": [0.9, 1.1],
+    "contrast_factor": [0.9, 1.1]
+  },
+  "hog_svm": {
+    "pipeline_id": "hog_svm",
+    "input_size": [128, 128],
+    "resize_interpolation": "bilinear",
+    "resize_reducing_gap": null,
+    "grayscale": "skimage.color.rgb2gray",
+    "feature_dtype": "float64",
+    "hog": {
+      "orientations": 9,
+      "pixels_per_cell": [8, 8],
+      "cells_per_block": [2, 2],
+      "block_norm": "L2-Hys",
+      "transform_sqrt": true,
+      "feature_vector": true,
+      "channel_axis": null,
+      "expected_feature_length": 8100
+    },
+    "scaler": {
+      "type": "StandardScaler",
+      "with_mean": true,
+      "with_std": true
+    },
+    "classifier": {
+      "type": "LinearSVC",
+      "penalty": "l2",
+      "loss": "squared_hinge",
+      "dual": true,
+      "tol": 0.001,
+      "max_iter": 20000,
+      "class_weight": null,
+      "random_state": 42177,
+      "c_candidates": [0.01, 0.1, 1.0, 10.0]
+    },
+    "selection_metric": "val_macro_f1",
+    "selection_tie_break": "smallest_C"
+  },
+  "small_cnn": {
+    "pipeline_id": "small_cnn",
+    "architecture": {
+      "blocks": [
+        {"in_channels": 3, "out_channels": 32},
+        {"in_channels": 32, "out_channels": 64},
+        {"in_channels": 64, "out_channels": 128},
+        {"in_channels": 128, "out_channels": 256}
+      ],
+      "convolution_kernel": [3, 3],
+      "convolution_stride": [1, 1],
+      "convolution_padding": [1, 1],
+      "convolution_bias": false,
+      "block_order": ["Conv2d", "BatchNorm2d", "ReLU", "MaxPool2d"],
+      "batch_norm_epsilon": 0.00001,
+      "batch_norm_momentum": 0.1,
+      "batch_norm_affine": true,
+      "batch_norm_track_running_stats": true,
+      "relu_inplace": false,
+      "max_pool_kernel": [2, 2],
+      "max_pool_stride": [2, 2],
+      "global_pool": "AdaptiveAvgPool2d(1,1)",
+      "dropout_probability": 0.3,
+      "output_classes": 4
+    },
+    "initialization": {
+      "convolution": "kaiming_normal_fan_out_relu",
+      "batch_norm_weight": 1.0,
+      "batch_norm_bias": 0.0,
+      "classifier": "xavier_uniform"
+    },
+    "training": {
+      "epochs": 30,
+      "batch_size": 32,
+      "loss": "CrossEntropyLoss",
+      "label_smoothing": 0.0,
+      "optimizer": "AdamW",
+      "learning_rate": 0.001,
+      "betas": [0.9, 0.999],
+      "epsilon": 0.00000001,
+      "weight_decay": 0.0001,
+      "scheduler": "CosineAnnealingLR",
+      "scheduler_t_max": 30,
+      "scheduler_eta_min": 0.000001,
+      "gradient_clip_norm": 5.0
+    },
+    "selection_metric": "val_macro_f1"
+  },
+  "mobilenet_v3": {
+    "pipeline_id": "mobilenet_v3_small",
+    "builder": "torchvision.models.mobilenet_v3_small",
+    "weights_enum": "MobileNet_V3_Small_Weights.IMAGENET1K_V1",
+    "weights_url": "https://download.pytorch.org/models/mobilenet_v3_small-047dcff4.pth",
+    "output_classes": 4,
+    "freeze_batch_norm_running_stats": true,
+    "stage_a": {
+      "name": "frozen_feature_extractor",
+      "trainable_modules": ["classifier.3"],
+      "epochs": 10,
+      "batch_size": 32,
+      "optimizer": "AdamW",
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "scheduler": "CosineAnnealingLR",
+      "scheduler_t_max": 10,
+      "scheduler_eta_min": 0.000001
+    },
+    "stage_b": {
+      "name": "partial_fine_tuning",
+      "initialize_from": "best_stage_a",
+      "trainable_feature_start_index": 9,
+      "train_classifier": true,
+      "epochs": 15,
+      "batch_size": 32,
+      "optimizer": "AdamW",
+      "feature_learning_rate": 0.0001,
+      "classifier_learning_rate": 0.0005,
+      "weight_decay": 0.0001,
+      "scheduler": "CosineAnnealingLR",
+      "scheduler_t_max": 15,
+      "scheduler_eta_min": 0.000001
+    },
+    "common_training": {
+      "loss": "CrossEntropyLoss",
+      "label_smoothing": 0.0,
+      "gradient_clip_norm": 5.0
+    },
+    "final_candidate_set": ["best_stage_a", "best_stage_b"],
+    "selection_metric": "val_macro_f1"
+  },
+  "model_selection": {
+    "score_comparison_epsilon": 0.000000000001,
+    "first_key": "higher_macro_f1",
+    "second_key": "lower_validation_loss",
+    "third_key": "earlier_epoch"
+  },
+  "evaluation": {
+    "labels": [0, 1, 2, 3],
+    "primary_metric": "macro_f1",
+    "required_metrics": [
+      "accuracy",
+      "macro_precision",
+      "macro_recall",
+      "macro_f1",
+      "per_class_precision",
+      "per_class_recall",
+      "per_class_f1",
+      "confusion_matrix"
+    ],
+    "zero_division": 0,
+    "practical_tie_threshold_macro_f1": 0.005,
+    "paired_stratified_bootstrap": {
+      "enabled": true,
+      "repetitions": 10000,
+      "seed": 42177,
+      "confidence_level": 0.95,
+      "quantile_method": "linear"
+    },
+    "test_policy": "evaluate_once_after_pipeline_freeze"
+  },
+  "robustness": {
+    "source_split": "test",
+    "training_on_corruptions": false,
+    "gaussian_noise_sigma": [0.02, 0.05, 0.1],
+    "gaussian_blur_radius": [0.5, 1.0, 2.0],
+    "brightness_factor": [0.7, 0.85, 1.15, 1.3],
+    "noise_rng": "numpy.random.Generator(PCG64)",
+    "noise_seed_namespace": "pv-a1-v1/robustness/noise",
+    "cache_format": "PNG",
+    "required_metric": "macro_f1_drop_from_clean"
+  },
+  "artifacts": {
+    "root": "artifacts",
+    "final_weight_format": "safetensors",
+    "prediction_format": "canonical_jsonl",
+    "checksum_algorithm": "sha256",
+    "include_runtime_metadata_in_reproducibility_hash": false,
+    "required_files": [
+      "resolved_config.json",
+      "provenance.json",
+      "history.csv",
+      "predictions/val.jsonl",
+      "predictions/test.jsonl",
+      "metrics/val.json",
+      "metrics/test.json",
+      "checksums.sha256"
+    ]
+  }
+}

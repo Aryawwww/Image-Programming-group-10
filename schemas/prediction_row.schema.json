@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/pv/prediction-row.schema.json",
+  "title": "PlantVillage canonical prediction row",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "experiment_id",
+    "pipeline_id",
+    "split",
+    "sample_id",
+    "true_class_id",
+    "predicted_class_id",
+    "predicted_class_name",
+    "score_type",
+    "scores"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "experiment_id": {"type": "string", "minLength": 1},
+    "pipeline_id": {"enum": ["hog_svm", "small_cnn", "mobilenet_v3_small"]},
+    "split": {"enum": ["val", "test"]},
+    "sample_id": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "true_class_id": {"type": "integer", "minimum": 0, "maximum": 3},
+    "predicted_class_id": {"type": "integer", "minimum": 0, "maximum": 3},
+    "predicted_class_name": {"type": "string"},
+    "score_type": {"enum": ["decision_margin", "probability"]},
+    "scores": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {"type": "number"}
+    }
+  }
+}

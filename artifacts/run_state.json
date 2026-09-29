@@ -1,0 +1,150 @@
+{
+  "current_phase": "P9",
+  "phases": {
+    "P0": {
+      "artifacts": [
+        "data/source_snapshot/dataset_lock.json"
+      ],
+      "command": [
+        "C:\\Users\\32142\\Documents\\Codex\\2026-08-19\\cha\\plantvillage_pipeline\\src\\pv_pipeline\\__main__.py",
+        "data",
+        "acquire",
+        "--config",
+        "configs/project_config.json"
+      ],
+      "status": "complete",
+      "updated_at_utc": "2026-08-28T01:27:38.271046+00:00"
+    },
+    "P1": {
+      "artifacts": [
+        "data/manifests/manifest.jsonl",
+        "data/manifests/validate_manifest.json"
+      ],
+      "command": [
+        "C:\\Users\\32142\\Documents\\Codex\\2026-08-19\\cha\\plantvillage_pipeline\\src\\pv_pipeline\\__main__.py",
+        "data",
+        "validate",
+        "--config",
+        "configs/project_config.json"
+      ],
+      "status": "complete",
+      "updated_at_utc": "2026-08-28T09:26:07.231309+00:00"
+    },
+    "P2": {
+      "artifacts": [
+        "data/manifests/montage_approval.json"
+      ],
+      "command": [
+        "owner_authorization",
+        "\u8fdb\u884c\u4e0b\u4e00\u6b65"
+      ],
+      "note": "Project owner authorized continuation after documented AI montage review; no claim of personal human visual inspection.",
+      "status": "complete",
+      "updated_at_utc": "2026-08-28T14:02:45.352272+00:00"
+    },
+    "P3": {
+      "artifacts": [
+        "artifacts/smoke/smoke_test.json"
+      ],
+      "command": [
+        "C:\\Users\\32142\\Documents\\Codex\\2026-08-19\\cha\\plantvillage_pipeline\\src\\pv_pipeline\\__main__.py",
+        "smoke-test",
+        "--config",
+        "configs/project_config.json",
+        "--device",
+        "cpu"
+      ],
+      "note": "P2 human montage review remains pending.",
+      "status": "complete",
+      "updated_at_utc": "2026-08-28T09:27:15.065975+00:00"
+    },
+    "P4": {
+      "artifacts": [
+        "C:\\Users\\32142\\Documents\\Codex\\2026-08-19\\cha\\plantvillage_pipeline\\artifacts\\44e011204f972179\\hog_svm"
+      ],
+      "command": [
+        "C:\\Users\\32142\\Documents\\Codex\\2026-08-19\\cha\\plantvillage_pipeline\\src\\pv_pipeline\\__main__.py",
+        "train",
+        "hog_svm",
+        "--config",
+        "configs/project_config.json"
+      ],
+      "status": "complete",
+      "updated_at_utc": "2026-08-28T09:29:50.001177+00:00"
+    },
+    "P5": {
+      "artifacts": [
+        "C:\\Users\\32142\\Documents\\Codex\\2026-08-19\\cha\\plantvillage_pipeline\\artifacts\\48dba0ad94e81d50\\small_cnn"
+      ],
+      "command": [
+        "C:\\Users\\32142\\Documents\\Codex\\2026-08-19\\cha\\plantvillage_pipeline\\src\\pv_pipeline\\__main__.py",
+        "train",
+        "small_cnn",
+        "--config",
+        "configs/project_config.json",
+        "--device",
+        "auto"
+      ],
+      "status": "complete",
+      "updated_at_utc": "2026-08-28T16:03:14.574067+00:00"
+    },
+    "P6": {
+      "artifacts": [
+        "C:\\Users\\32142\\Documents\\Codex\\2026-08-19\\cha\\plantvillage_pipeline\\artifacts\\fa545532ac93e1e9\\mobilenet_v3_small"
+      ],
+      "command": [
+        "C:\\Users\\32142\\Documents\\Codex\\2026-08-19\\cha\\plantvillage_pipeline\\src\\pv_pipeline\\__main__.py",
+        "train",
+        "mobilenet_v3_small",
+        "--config",
+        "configs/project_config.json",
+        "--device",
+        "auto"
+      ],
+      "status": "complete",
+      "updated_at_utc": "2026-08-28T21:17:48.507317+00:00"
+    },
+    "P7": {
+      "artifacts": [
+        "artifacts/test_gate.json"
+      ],
+      "command": [
+        "C:\\Users\\32142\\Documents\\Codex\\2026-08-19\\cha\\plantvillage_pipeline\\src\\pv_pipeline\\__main__.py",
+        "freeze-test-gate",
+        "--config",
+        "configs/project_config.json"
+      ],
+      "status": "complete",
+      "updated_at_utc": "2026-08-28T21:19:24.840104+00:00"
+    },
+    "P8": {
+      "artifacts": [
+        "C:\\Users\\32142\\Documents\\Codex\\2026-08-19\\cha\\plantvillage_pipeline\\artifacts\\comparison"
+      ],
+      "command": [
+        "C:\\Users\\32142\\Documents\\Codex\\2026-08-19\\cha\\plantvillage_pipeline\\src\\pv_pipeline\\__main__.py",
+        "compare",
+        "--config",
+        "configs/project_config.json"
+      ],
+      "status": "complete",
+      "updated_at_utc": "2026-08-28T21:31:17.133492+00:00"
+    },
+    "P9": {
+      "artifacts": [
+        "artifacts/verify_run.json"
+      ],
+      "command": [
+        "C:\\Users\\32142\\Documents\\Codex\\2026-08-19\\cha\\plantvillage_pipeline\\src\\pv_pipeline\\__main__.py",
+        "verify-run",
+        "--config",
+        "configs/project_config.json"
+      ],
+      "status": "complete",
+      "updated_at_utc": "2026-08-28T21:31:59.451594+00:00"
+    }
+  },
+  "project_id": "pv_tomato_4class_a1",
+  "schema_version": "1.0.0",
+  "updated_at_utc": "2026-08-28T21:31:59.451594+00:00"
+}

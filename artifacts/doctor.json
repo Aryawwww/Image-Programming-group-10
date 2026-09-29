@@ -1,0 +1,54 @@
+{
+  "checks": [
+    {
+      "detail": "active",
+      "name": "deterministic_process_environment",
+      "passed": true
+    },
+    {
+      "detail": "b299aef3fa461a408908084ecabd642acb72c1097bca28d04510988e7e111b81",
+      "name": "project_config",
+      "passed": true
+    },
+    {
+      "detail": "e1f64a9c27804e31a4834a427a981c8e077771e3de716e7f8e4eb076d2506b15",
+      "name": "classes",
+      "passed": true
+    },
+    {
+      "detail": "7113cb17e3fa4b466f31ec99c04e6a34871b4d955ae04519c395fdb1668c95a2",
+      "name": "source_tree",
+      "passed": true
+    },
+    {
+      "detail": "13c03ab0edc99bfeddc18beb74b26ec2e57faa8e945bcb205b66c73cc04ad8c6",
+      "name": "dataset_lock",
+      "passed": true
+    },
+    {
+      "detail": "bf94c05f60d4520e94a5d7d17f23514d3e62d7070e95c0c3ca692417de9f7960",
+      "name": "manifest_lock",
+      "passed": true
+    },
+    {
+      "detail": "pass",
+      "name": "environment_report",
+      "passed": true
+    },
+    {
+      "detail": {
+        "backend": "cpu",
+        "cuda_available": false,
+        "device": "cpu",
+        "platform": "Windows-10-10.0.26200-SP0",
+        "python": "3.11.9",
+        "torch": "2.9.0+cpu"
+      },
+      "name": "device",
+      "passed": true
+    }
+  ],
+  "generated_at_utc": "2026-08-28T09:27:30.132791+00:00",
+  "schema_version": "1.0.0",
+  "status": "pass"
+}

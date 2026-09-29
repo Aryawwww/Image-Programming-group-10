@@ -1,0 +1,14 @@
+.venv/
+.runtime/
+.cache/
+wheelhouse/
+artifacts/environment/*.json
+artifacts/environment/*.txt
+!artifacts/environment/.gitkeep
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+data/
+artifacts/*/
+!artifacts/environment/

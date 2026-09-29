@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0.0",
+  "classes": [
+    {
+      "class_id": 0,
+      "class_name": "Tomato___healthy",
+      "display_name": "Tomato healthy"
+    },
+    {
+      "class_id": 1,
+      "class_name": "Tomato___Early_blight",
+      "display_name": "Tomato Early blight"
+    },
+    {
+      "class_id": 2,
+      "class_name": "Tomato___Late_blight",
+      "display_name": "Tomato Late blight"
+    },
+    {
+      "class_id": 3,
+      "class_name": "Tomato___Leaf_Mold",
+      "display_name": "Tomato Leaf Mold"
+    }
+  ]
+}

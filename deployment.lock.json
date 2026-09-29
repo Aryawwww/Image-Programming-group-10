@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0.0",
+  "python": {
+    "version": "3.11.9",
+    "architecture": "amd64",
+    "installer_url": "https://www.python.org/ftp/python/3.11.9/python-3.11.9-amd64.exe",
+    "installer_sha256": "5ee42c4eee1e6b4464bb23722f90b45303f79442df63083f05322f1785f5fdde",
+    "signer_subject_contains": "Python Software Foundation",
+    "package_index_url": "https://pypi.org/simple"
+  },
+  "wheelhouse": {
+    "python_version": "3.11.9",
+    "platform_tag": "win-amd64",
+    "file_count": 54,
+    "distribution_count": 54,
+    "locked_payload_sha256": "72399fc90e8a01e0a5af91092fa1970ca65072cdc7d18a9804d198786beb5370",
+    "requirements_lock_sha256": "9d5db134b6bbefc26ff06da776f2cc3c7389b4522c87fba54a5aa6a3566d35ce"
+  },
+  "locked_files": {
+    ".python-version": "61141e9590171b900fdf709e7ea8f050d5c2a69198d4a4a1977d7c45186307e5",
+    "pyproject.toml": "d8d0e3c5f0b524a269f837a8c66ac74f256f7ccc10b2445dd25bb36a1d976a28",
+    "README.md": "5b78512c96881d95e6f188d66018b7e4b5b0204614b699e5fcfde517ef2cdc78",
+    "docs/ENVIRONMENT_DEPLOYMENT.md": "7ae88a4f6ea23e57015c3290fdc718aa7f9d1f99970e08e91140dbd6c1c0ed34",
+    "configs/project_config.json": "0d826845b2b7deadb14a4971eb721a46433ce2d2acf7f5ca199d8a173ba60ca4",
+    "configs/classes.json": "e1f64a9c27804e31a4834a427a981c8e077771e3de716e7f8e4eb076d2506b15",
+    "requirements/bootstrap.txt": "81c256a8a7582746f41019612a002c52165d240426246820ee031b70c62a66cf",
+    "requirements/reference.txt": "a4e5b11deb35b64e8ee54f8ec9458d84e6507fc43b8468d461fdbed71531dc93",
+    "requirements/resolved.txt": "9d5db134b6bbefc26ff06da776f2cc3c7389b4522c87fba54a5aa6a3566d35ce",
+    "scripts/bootstrap.ps1": "533f67cb6fdd27ca01ef68b35102897057a00e3935f1a8fff9352c3bc7cd97bf",
+    "scripts/run_deterministic.ps1": "8d7dd4db50d5002c2e6095d7e9c54368695b5cac8d1d7c6cee6f84c0db674d53",
+    "scripts/pv.ps1": "6cb56a70fa1fd0b2db453204e5681e724c7c6deeac3ecc26736be10491b930ed",
+    "scripts/test.ps1": "e7a2d9a20d1242131328f4fe8e1a2ce5678b703c1ef8a69ac0b9ab194f765b54",
+    "scripts/verify_environment.py": "5462498507b276b717deed582279e3a14601d96d79a6652c39172b15b0dd1f73",
+    "scripts/verify_wheelhouse.py": "212458dfb1946c880422ee84d52d3ea62375a37a6bcad1a0407602bd039d8a27",
+    "scripts/write_wheelhouse_manifest.py": "b67e0a1b321e1d2b52f786f07305d6cbf8542f3d4ae4802c96a51b4d0935fb02",
+    "schemas/manifest_row.schema.json": "65e4c7a7f3f460cde4d67415cebbaa0efbbdcf45e0963ebc4d0d13ab7c8af54a",
+    "schemas/prediction_row.schema.json": "5b71daf738a24a8a2bf67d63a12822014b7eaec8e1f2e3585d9c70f168dac1ca"
+  }
+}

@@ -1,0 +1,17 @@
+# Reference dependency pins. The implementation MUST generate and commit a
+# platform-specific resolver lock with hashes before the canonical run.
+torch==2.9.0
+torchvision==0.24.0
+numpy==1.26.4
+scipy==1.14.1
+scikit-learn==1.5.2
+scikit-image==0.24.0
+Pillow==10.4.0
+pandas==2.2.3
+matplotlib==3.9.2
+seaborn==0.13.2
+huggingface-hub==0.26.2
+safetensors==0.4.5
+joblib==1.4.2
+jsonschema==4.23.0
+pytest==8.3.3

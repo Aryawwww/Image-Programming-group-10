@@ -1,0 +1,254 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "PV: Environment Verify",
+      "type": "process",
+      "command": "powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}\\scripts\\bootstrap.ps1",
+        "-Action",
+        "Verify"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "PV: Doctor",
+      "type": "process",
+      "command": "powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}\\scripts\\pv.ps1",
+        "doctor",
+        "--config",
+        "configs/project_config.json"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "PV: Tests",
+      "type": "process",
+      "command": "powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}\\scripts\\test.ps1"
+      ],
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "PV: Data Acquire",
+      "type": "process",
+      "command": "powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}\\scripts\\pv.ps1",
+        "data",
+        "acquire",
+        "--config",
+        "configs/project_config.json"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "PV: Data Validate",
+      "type": "process",
+      "command": "powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}\\scripts\\pv.ps1",
+        "data",
+        "validate",
+        "--config",
+        "configs/project_config.json"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "PV: Smoke Test",
+      "type": "process",
+      "command": "powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}\\scripts\\pv.ps1",
+        "smoke-test",
+        "--config",
+        "configs/project_config.json",
+        "--device",
+        "auto"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "PV: Train HOG-SVM",
+      "type": "process",
+      "command": "powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}\\scripts\\pv.ps1",
+        "train",
+        "hog_svm",
+        "--config",
+        "configs/project_config.json"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "PV: Train Small CNN",
+      "type": "process",
+      "command": "powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}\\scripts\\pv.ps1",
+        "train",
+        "small_cnn",
+        "--config",
+        "configs/project_config.json",
+        "--device",
+        "auto"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "PV: Train MobileNetV3",
+      "type": "process",
+      "command": "powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}\\scripts\\pv.ps1",
+        "train",
+        "mobilenet_v3_small",
+        "--config",
+        "configs/project_config.json",
+        "--device",
+        "auto"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "PV: Freeze Test Gate",
+      "type": "process",
+      "command": "powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}\\scripts\\pv.ps1",
+        "freeze-test-gate",
+        "--config",
+        "configs/project_config.json"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "PV: Evaluate Frozen Test",
+      "type": "process",
+      "command": "powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}\\scripts\\pv.ps1",
+        "evaluate",
+        "--pipeline",
+        "all",
+        "--split",
+        "test",
+        "--config",
+        "configs/project_config.json",
+        "--device",
+        "auto"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "PV: Robustness All",
+      "type": "process",
+      "command": "powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}\\scripts\\pv.ps1",
+        "robustness",
+        "--pipeline",
+        "all",
+        "--config",
+        "configs/project_config.json",
+        "--device",
+        "auto"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "PV: Compare Models",
+      "type": "process",
+      "command": "powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}\\scripts\\pv.ps1",
+        "compare",
+        "--config",
+        "configs/project_config.json"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "PV: Verify Complete Run",
+      "type": "process",
+      "command": "powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}\\scripts\\pv.ps1",
+        "verify-run",
+        "--config",
+        "configs/project_config.json"
+      ],
+      "problemMatcher": []
+    }
+  ]
+}

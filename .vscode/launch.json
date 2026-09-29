@@ -1,0 +1,52 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "PV: Doctor",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "pv_pipeline",
+      "args": [
+        "doctor",
+        "--config",
+        "configs/project_config.json"
+      ],
+      "cwd": "${workspaceFolder}",
+      "envFile": "${workspaceFolder}\\.vscode\\.env",
+      "justMyCode": true
+    },
+    {
+      "name": "PV: Smoke Test",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "pv_pipeline",
+      "args": [
+        "smoke-test",
+        "--config",
+        "configs/project_config.json",
+        "--device",
+        "auto"
+      ],
+      "cwd": "${workspaceFolder}",
+      "envFile": "${workspaceFolder}\\.vscode\\.env",
+      "justMyCode": true
+    },
+    {
+      "name": "PV: Train Current Pipeline",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "pv_pipeline",
+      "args": [
+        "train",
+        "small_cnn",
+        "--config",
+        "configs/project_config.json",
+        "--device",
+        "auto"
+      ],
+      "cwd": "${workspaceFolder}",
+      "envFile": "${workspaceFolder}\\.vscode\\.env",
+      "justMyCode": true
+    }
+  ]
+}
