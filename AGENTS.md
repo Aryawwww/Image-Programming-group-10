@@ -53,3 +53,9 @@ Exact next command:
 ```
 
 额度更新后的会话应从 `artifacts/run_state.json` 和最后一个成功 artifact 继续，不应重新发明 pipeline 或清除现有环境。
+
+## Project Report 2
+
+- Project Implementation 的评分标准与提交检查表记录在 `docs/REPORT_2_PROJECT_IMPLEMENTATION_RUBRIC.md`，撰写或修改 Report 2 前必须查阅。
+- Methodology 只说明团队做了什么、使用了哪些技术以及公共数据集的性质，不得提前呈现实验结果。
+- Results、Discussion、团队贡献表、引用与参考文献、图表标题以及代码附录均为独立评分项，不得省略。
