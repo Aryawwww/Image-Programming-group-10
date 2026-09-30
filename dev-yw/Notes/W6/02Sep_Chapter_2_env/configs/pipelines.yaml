@@ -1,0 +1,48 @@
+# Alternative pipelines. Not a single sequential workflow.
+# A leaf mask is an experimental condition, not an inherited input.
+
+active: ["colour", "grayscale", "segmented"]
+
+colour:
+  source: color                   # raw/color
+  apply:
+    resize: true
+    gray_world: true
+    lab_hsv: true
+    clahe_L: true
+    bilateral: true
+    leaf_mask: false
+    four_channel: false           # set true only for a dedicated colour+grad run
+
+grayscale:
+  source: grayscale               # raw/grayscale (Mohanty official gray)
+  apply:
+    resize: true
+    gray_world: false
+    lab_hsv: false
+    clahe_L: false
+    bilateral: true
+    leaf_mask: false
+    four_channel: false
+
+segmented:
+  source: color                   # start from RGB; mask is this pipeline's own branch
+  apply:
+    resize: true
+    gray_world: true
+    lab_hsv: true
+    clahe_L: true
+    bilateral: true
+    leaf_mask: true               # Otsu ExG / a* + morphology
+    four_channel: false
+  official_segmented_as_control: true   # also index raw/segmented for 2.5
+
+# Operators that must not live in 2.1
+not_in_preprocess:
+  - HOG
+  - SIFT
+  - SURF
+  - ORB
+  - Harris
+  - Shi-Tomasi
+  - U-Net

@@ -1,0 +1,28 @@
+# Section 2.5. Same split across pipelines. Mask is one condition.
+
+compare_pipelines: [colour, grayscale, segmented]
+official_segmented_control: true
+
+corruptions:
+  brightness_pct: [-30, 30]
+  gaussian_blur_sigma: [0.5, 1.5]
+  jpeg_quality: [40]
+  gaussian_noise: true            # report-level option (Hendrycks & Dietterich, 2019)
+
+split:
+  strategy: leaf_id               # not random image split
+  train: 0.8
+  val: 0.1
+  test: 0.1
+
+metrics:
+  - accuracy
+  - macro_precision
+  - macro_recall
+  - macro_f1
+  - confusion_matrix
+practical:
+  - param_count
+  - flops
+  - latency_cpu
+  - latency_gpu

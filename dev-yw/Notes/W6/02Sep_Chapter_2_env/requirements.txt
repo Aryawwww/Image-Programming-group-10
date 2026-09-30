@@ -1,0 +1,10 @@
+# Core Chapter 2 stack (any Python 3.13.x; 3.13.7 on Apple Silicon is fine).
+# Deep learning extras: pip install -e ".[dl]"
+numpy>=2.1
+opencv-python-headless>=4.10
+scikit-image>=0.25
+scikit-learn>=1.6
+PyYAML>=6.0
+Pillow>=11.0
+matplotlib>=3.9
+tqdm>=4.66
