@@ -2,6 +2,14 @@
 .DS_Store
 **/.DS_Store
 
+PlantVillage-Dataset/
+PlantVillage-Dataset.zip
+
+upload.sh
+README.self.md
+*.swp
+**/*.swp
+
 # Autosave files
 *.asv
 *.m~
@@ -28,8 +36,11 @@ helpsearch*/
 
 # Code generation folders
 slprj/
+**/slprj/
 sccprj/
+**/sccprj/
 codegen/
+**/codegen/
 
 # Cache files
 *.slxc
