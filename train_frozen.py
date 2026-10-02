@@ -17,7 +17,7 @@ def parse_args():
     parser.add_argument(
         "--dataset-dir",
         type=Path,
-        default=project_dir.parent / "A2" / "subset",
+        default=project_dir / "dataset",
         help="Shared CNN dataset containing train/validation/test folders.",
     )
     parser.add_argument(

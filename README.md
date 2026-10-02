@@ -47,16 +47,16 @@ The baseline reads the exact directory dataset produced by the Custom CNN's
 `subset_preprocess.py`. This avoids creating a second random split and includes
 the same saved training-only augmented images. MobileNetV3-Small's built-in
 preprocessing remains enabled, the complete ImageNet feature extractor is frozen,
-and only a global-average-pooling/dropout/five-class head is trained. Copy or point
-to the shared CNN dataset, which must contain `train`, `validation`, and `test`
-folders, then run from the project directory:
+and only a global-average-pooling/dropout/five-class head is trained. The shared
+dataset is stored in this repository under `dataset/` with `train`, `validation`,
+and `test` folders. Run from the project directory:
 
 ```powershell
-python train_frozen.py --dataset-dir "path/to/shared/cnn/subset"
+python train_frozen.py
 ```
 
 Use `python train_frozen.py --help` to override the dataset, output, or training
-settings. If `--dataset-dir` is omitted, it defaults to the sibling `A2/subset`
+settings. If `--dataset-dir` is omitted, it defaults to the repository's `dataset`
 folder. Artifacts are written to `outputs/frozen`: the best model,
 training history, learning curves, and a JSON record of the configuration and
 training time. The test dataset is loaded only to verify the shared class mapping;
