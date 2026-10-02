@@ -11,9 +11,10 @@ The MobileNet implementation must use the same dataset subset, leaf-grouped data
 - Dataset: [mohanty/PlantVillage](https://huggingface.co/datasets/mohanty/PlantVillage)
 - Configuration: original RGB images (`color`)
 - Scope: one healthy tomato class and four tomato disease classes
-- Dataset size: 3,750 images, with 750 images from each selected class
-- Split: 80% training, 10% validation, and 10% testing
-- Split implementation: the same two-stage stratified `train_test_split` procedure used by the Custom CNN pipeline
+- Shared source subset: 550 original images per class
+- Split before augmentation: 400 training, 75 validation, and 75 testing images per class
+- Training set after CNN preprocessing: 600 images per class, including training-only augmented images
+- Split implementation: reuse the Custom CNN's generated `train`, `validation`, and `test` folders directly
 - Random seed: `42`
 - Data augmentation: training split only
 - Model selection: validation split only
@@ -29,16 +30,37 @@ The final model will be evaluated with accuracy, macro precision, macro recall, 
 - [x] Defined the responsibilities of the two MobileNet team members
 - [x] Created the `mobileNet` development branch
 - [x] Confirmed the five tomato classes used by the Custom CNN pipeline
-- [x] Created the balanced 750-image-per-class subset
-- [x] Created and verified the train, validation, and test manifests
-- [x] Adapted image preprocessing and training-only augmentation for MobileNetV3-Small
-- [ ] Implement frozen-backbone training
+- [x] Matched the Custom CNN's 550-original-image-per-class sampling protocol
+- [x] Reused the Custom CNN's generated train, validation, and test folders
+- [x] Kept augmentation restricted to the shared training folder
+- [x] Implement frozen-backbone training
 - [ ] Implement partial fine-tuning
 - [ ] Implement the shared evaluation functions
 - [ ] Run the original and robustness test sets
 - [ ] Generate figures, tables, and report material
 
 No model-training results are available yet. Results will be added after the MobileNetV3-Small training environment and model settings have been finalised.
+
+## Frozen-backbone baseline
+
+The baseline reads the exact directory dataset produced by the Custom CNN's
+`subset_preprocess.py`. This avoids creating a second random split and includes
+the same saved training-only augmented images. MobileNetV3-Small's built-in
+preprocessing remains enabled, the complete ImageNet feature extractor is frozen,
+and only a global-average-pooling/dropout/five-class head is trained. Copy or point
+to the shared CNN dataset, which must contain `train`, `validation`, and `test`
+folders, then run from the project directory:
+
+```powershell
+python train_frozen.py --dataset-dir "path/to/shared/cnn/subset"
+```
+
+Use `python train_frozen.py --help` to override the dataset, output, or training
+settings. If `--dataset-dir` is omitted, it defaults to the sibling `A2/subset`
+folder. Artifacts are written to `outputs/frozen`: the best model,
+training history, learning curves, and a JSON record of the configuration and
+training time. The test dataset is loaded only to verify the shared class mapping;
+it is not passed to model training or checkpoint selection.
 
 ## Team Responsibilities
 
@@ -94,7 +116,7 @@ Shuhui and Alicia will jointly:
 ## Reproducibility Rules
 
 1. Do not create an independent random split for MobileNet.
-2. Reuse the committed CSV manifests instead of sampling or splitting the images again.
+2. Reuse the Custom CNN's generated split folders and files directly.
 3. Do not augment validation or test images.
 4. Do not use test results to select hyperparameters or checkpoints.
 5. Run robustness testing only after the final model configuration has been selected.
