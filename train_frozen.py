@@ -89,6 +89,8 @@ def main():
     history_df.index.name = "epoch"
     history_df.to_csv(args.output_dir / "training_history.csv")
     save_history_plot(history_df, args.output_dir / "training_history.png")
+    best_loss_row = history_df.loc[history_df["val_loss"].idxmin()]
+    best_accuracy_row = history_df.loc[history_df["val_accuracy"].idxmax()]
     metadata = {
         "architecture": "MobileNetV3Small",
         "backbone_trainable": False,
@@ -97,6 +99,11 @@ def main():
         "batch_size": args.batch_size,
         "maximum_epochs": args.epochs,
         "epochs_completed": len(history_df),
+        "best_validation_loss_epoch": int(best_loss_row.name),
+        "best_validation_loss": float(best_loss_row["val_loss"]),
+        "validation_accuracy_at_best_loss": float(best_loss_row["val_accuracy"]),
+        "best_validation_accuracy_epoch": int(best_accuracy_row.name),
+        "best_validation_accuracy": float(best_accuracy_row["val_accuracy"]),
         "learning_rate": args.learning_rate,
         "early_stopping_patience": args.patience,
         "seed": SEED,

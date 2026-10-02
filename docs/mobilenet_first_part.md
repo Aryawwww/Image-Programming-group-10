@@ -51,6 +51,29 @@ mapping, random seed, hyperparameters, epoch-level loss and accuracy, and the
 training and validation learning curves. These artifacts provide the starting point
 for the later partial fine-tuning and final evaluation stages.
 
+## Frozen-backbone results
+
+The frozen-backbone baseline completed all 50 configured epochs in 356.63 seconds
+(approximately 5 minutes 57 seconds) on the available CPU environment. The
+checkpoint selected by minimum validation loss was produced at epoch 49. It
+achieved a validation loss of 0.03835 and validation accuracy of 98.93%. The
+highest observed validation accuracy was 99.47% at epoch 48, where validation
+loss was 0.03967. Because checkpoint selection was defined using validation loss,
+the epoch-49 model was retained.
+
+At the end of epoch 50, training accuracy reached 99.97% and training loss fell to
+0.01836, while validation accuracy was 98.93% and validation loss was 0.04006.
+The learning curves show rapid improvement during the first epochs followed by a
+stable validation plateau. The small gap between training and validation accuracy
+near the end indicates mild overfitting, but validation loss remained low and did
+not show a sustained deterioration. The model contained 942,005 parameters in
+total. Only 2,885 parameters in the new classification head were trainable, while
+939,120 backbone parameters remained frozen.
+
+These values describe training and validation behaviour only. The test split was
+not used to calculate these results and remained reserved for the later shared
+evaluation stage.
+
 ## Outputs from this stage
 
 The implementation produces the following artifacts under `outputs/frozen`:
@@ -60,10 +83,9 @@ The implementation produces the following artifacts under `outputs/frozen`:
 - `training_history.png`: accuracy and loss learning curves; and
 - `training_config.json`: reproducibility settings and measured training time.
 
-Numerical results should be added to the final report only after the pipeline has
-been run in the agreed TensorFlow environment. Test accuracy, macro-averaged
-precision, recall and F1-score, the confusion matrix, and robustness experiments
-belong to the later shared evaluation stage and are intentionally not reported here.
+Test accuracy, macro-averaged precision, recall and F1-score, the confusion matrix,
+and robustness experiments belong to the later shared evaluation stage and are
+intentionally not reported here.
 
 ## Individual contribution statement
 

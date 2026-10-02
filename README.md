@@ -39,7 +39,11 @@ The final model will be evaluated with accuracy, macro precision, macro recall, 
 - [ ] Run the original and robustness test sets
 - [ ] Generate figures, tables, and report material
 
-No model-training results are available yet. Results will be added after the MobileNetV3-Small training environment and model settings have been finalised.
+The frozen-backbone baseline completed 50 epochs in 356.63 seconds. The saved
+checkpoint is from epoch 49, which achieved validation loss 0.03835 and validation
+accuracy 98.93%. The highest observed validation accuracy was 99.47% at epoch 48.
+These are validation results only; the untouched test set remains reserved for the
+later shared evaluation stage.
 
 ## Frozen-backbone baseline
 
