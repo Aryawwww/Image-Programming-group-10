@@ -7,16 +7,31 @@ import numpy as np
 from skimage.morphology import skeletonize
 
 
-def vein_skeleton(magnitude: np.ndarray, mask: np.ndarray) -> np.ndarray:
-    """Thin edges inside the mask. Thick blobs are removed before skeletonizing."""
+def vein_skeleton(
+    magnitude: np.ndarray,
+    mask: np.ndarray,
+    *,
+    percentile: float = 90,
+    open_kernel: int = 5,
+) -> np.ndarray:
+    """Thin edges inside the mask. Thick blobs are removed before skeletonizing.
+
+    The reported column keeps percentile 90 and a 5×5 ellipse. Other values
+    belong to a later search and must not be written back into that column.
+    """
+    if not 0 < float(percentile) <= 100:
+        raise ValueError(f"percentile must be in (0, 100], got {percentile}")
+    kernel = int(open_kernel)
+    if kernel < 1 or kernel % 2 == 0:
+        raise ValueError(f"open kernel must be a positive odd width, got {open_kernel}")
     mag = np.asarray(magnitude, dtype=np.float32)
     inside = np.asarray(mask) > 0
     if not np.any(inside):
         return np.zeros(mag.shape[:2], dtype=bool)
-    threshold = float(np.percentile(mag[inside], 90))
+    threshold = float(np.percentile(mag[inside], float(percentile)))
     # A tied percentile of 0 would mark flat pixels as edges. Zero gradient is not a vein.
     edges = (mag >= threshold) & inside & (mag > 0)
-    thick_kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (5, 5))
+    thick_kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (kernel, kernel))
     thick = cv2.morphologyEx(edges.astype(np.uint8) * 255, cv2.MORPH_OPEN, thick_kernel) > 0
     thin = edges & ~thick
     skeleton = skeletonize(thin)

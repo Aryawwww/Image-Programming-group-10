@@ -1,0 +1,12 @@
+{
+  "search": "S2",
+  "winner_round": 10,
+  "percentile": 90.0,
+  "open_kernel": 5,
+  "rule": "max select min_class_auc of completeness, then mean, then nearer to percentile 90 and kernel 5",
+  "published_pair_drift": 1.0136413575168035e-07,
+  "s1_winner_round": 7,
+  "test_was_read": false,
+  "validation_was_read": false,
+  "classifier_was_refit": false
+}

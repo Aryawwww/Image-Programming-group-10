@@ -1,0 +1,10 @@
+{
+  "winner_round": 2,
+  "used_to_choose_winner": false,
+  "min_class_auc": 0.6981333333333333,
+  "mean_class_auc": 0.7773333333333332,
+  "auc_Tomato_Bacterial_spot": 0.6981333333333333,
+  "auc_Tomato_Late_blight": 0.8753777777777777,
+  "auc_Tomato_Septoria_leaf_spot": 0.7479111111111112,
+  "auc_Tomato__Tomato_YellowLeaf__Curl_Virus": 0.787911111111111
+}

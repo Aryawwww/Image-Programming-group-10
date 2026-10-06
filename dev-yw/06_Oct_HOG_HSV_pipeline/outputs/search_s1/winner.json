@@ -1,0 +1,14 @@
+{
+  "search": "S1",
+  "winner_round": 7,
+  "border": 2,
+  "pool": "orient_mean_std",
+  "n_features": 18,
+  "C": 1.0,
+  "alpha": 0.0,
+  "rule": "max select min_class_auc, then mean_class_auc, then fewer features, then smaller border, then lower round",
+  "select_fraction": 0.2,
+  "seed": 0,
+  "test_was_read": false,
+  "validation_was_read": false
+}

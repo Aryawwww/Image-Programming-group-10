@@ -1,0 +1,19 @@
+{
+  "search": "S3",
+  "winner_round": 2,
+  "source": "green",
+  "polarity": "dark",
+  "sigmas": "1-2",
+  "summary": "orient_mean_std",
+  "summary_border": 2,
+  "n_features": 18,
+  "C": 1.0,
+  "alpha": 0.0,
+  "s1_reference_round": 7,
+  "s1_reference_min_class_auc": 0.7672916666666667,
+  "rule": "max select min_class_auc, then mean_class_auc, then fewer scales, then lower round",
+  "reference_not_used_to_choose": true,
+  "test_was_read": false,
+  "validation_was_read": false,
+  "cache": "outputs/search_s3"
+}
