@@ -1,0 +1,19 @@
+{
+  "hsv_alpha": 0.4031262697503271,
+  "floor": 0.25,
+  "cap": 1.0,
+  "window": 16,
+  "stride": 8,
+  "min_leaf_fraction": 0.5,
+  "contrast_percentiles": [
+    10.0,
+    90.0
+  ],
+  "median_leaf_contrast": 0.20416835966710284,
+  "n_train": 3000,
+  "n_windows": 1122880,
+  "split": "train",
+  "test_was_read": false,
+  "validation_was_read": false,
+  "replaces_report_round": false
+}
