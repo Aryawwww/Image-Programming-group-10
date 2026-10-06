@@ -1,0 +1,19 @@
+{
+  "winner_round": 99,
+  "hog": "ori12-cell16",
+  "orientations": 12,
+  "pixels_per_cell": 16,
+  "cells_per_block": 2,
+  "hsv_alpha": 0.45,
+  "C": 1.0,
+  "used_to_choose_winner": false,
+  "replaces_report_round": false,
+  "n": 375,
+  "macro_f1": 0.7341147721741124,
+  "min_class_auc": 0.8170666666666667,
+  "mean_class_auc": 0.8846222222222223,
+  "auc_Tomato_Bacterial_spot": 0.8817777777777778,
+  "auc_Tomato_Late_blight": 0.9434666666666667,
+  "auc_Tomato_Septoria_leaf_spot": 0.8170666666666667,
+  "auc_Tomato__Tomato_YellowLeaf__Curl_Virus": 0.8961777777777779
+}

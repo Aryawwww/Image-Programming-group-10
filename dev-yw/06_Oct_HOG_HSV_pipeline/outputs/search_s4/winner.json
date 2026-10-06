@@ -1,0 +1,21 @@
+{
+  "search": "S4",
+  "winner_round": 99,
+  "hog": "ori12-cell16",
+  "orientations": 12,
+  "pixels_per_cell": 16,
+  "cells_per_block": 2,
+  "block_norm": "L2-Hys",
+  "hog_dim": 10800,
+  "hsv_dim": 27,
+  "hsv_alpha": 0.45,
+  "hsv_reference": 0.4031262697503271,
+  "hsv_floor": 0.25,
+  "C": 1.0,
+  "rule": "max select min_class_auc, then mean, then fewer HOG numbers, then nearer the HSV reference, then lower round",
+  "select_fraction": 0.2,
+  "seed": 0,
+  "test_was_read": false,
+  "validation_was_read": false,
+  "replaces_report_round": false
+}
