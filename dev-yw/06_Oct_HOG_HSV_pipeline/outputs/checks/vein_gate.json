@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "radius": 8,
+  "healthy": ["Tomato_healthy_img_0", "Tomato_healthy_img_103"],
+  "reason": "Both healthy overlays show a midrib and lateral veins. The white line is not the leaf outline. Median distance to the margin is 31.5 px and 41.5 px. Completeness is not scaled to 0.8."
+}

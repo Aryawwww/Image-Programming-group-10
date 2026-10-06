@@ -1,0 +1,20 @@
+{
+  "rounds": 16,
+  "selected_round": 10,
+  "C": 1.0,
+  "alpha": 0.25,
+  "train_macro_f1": 0.999666666435185,
+  "test_macro_f1": 0.6708197786795791,
+  "gap": 0.3288468877556059,
+  "eligible_for_validation": false,
+  "gate": {
+    "test_macro_f1_min": 0.9,
+    "gap_max": 0.05
+  },
+  "gate_cleared_by_any_round": false,
+  "completeness_scale": null,
+  "interior_completeness_reported": true,
+  "healthy_raw_median": 0.5521135330200195,
+  "report_rule": "C=1 and alpha=0.25 were fixed before the test scores were read.",
+  "note": "Sixteen rounds were refit. The drawn round was not the test-set maximum. Validation was not read. Completeness was not scaled to 0.8."
+}

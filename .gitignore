@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+**/*.npz
+**/outputs/cache/
+**/outputs/cache_bench/
+**/outputs/examples/
+**/visualize-seaborn/old/

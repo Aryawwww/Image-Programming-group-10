@@ -1,0 +1,9 @@
+[project]
+name = "vein-hog"
+version = "0.1.0"
+description = "HOG-primary, HSV-auxiliary leaf-vein scores on the shared tomato split."
+requires-python = ">=3.13"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

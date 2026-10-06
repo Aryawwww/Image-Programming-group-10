@@ -1,0 +1,85 @@
+{
+  "radius": 8,
+  "leaves": [
+    {
+      "stem": "Tomato_Bacterial_spot_img_1",
+      "class_name": "Tomato_Bacterial_spot",
+      "skeleton_pixels": 1418,
+      "median_distance_px": 23.82935333251953,
+      "raw_completeness": 0.48898966739903604,
+      "image_size": 256
+    },
+    {
+      "stem": "Tomato_Bacterial_spot_img_105",
+      "class_name": "Tomato_Bacterial_spot",
+      "skeleton_pixels": 1392,
+      "median_distance_px": 22.558349609375,
+      "raw_completeness": 0.7976292951344549,
+      "image_size": 256
+    },
+    {
+      "stem": "Tomato_Late_blight_img_100",
+      "class_name": "Tomato_Late_blight",
+      "skeleton_pixels": 254,
+      "median_distance_px": 12.432550430297852,
+      "raw_completeness": 0.1402101937705905,
+      "image_size": 256
+    },
+    {
+      "stem": "Tomato_Late_blight_img_101",
+      "class_name": "Tomato_Late_blight",
+      "skeleton_pixels": 1123,
+      "median_distance_px": 25.981599807739258,
+      "raw_completeness": 0.28737539290240005,
+      "image_size": 256
+    },
+    {
+      "stem": "Tomato_Septoria_leaf_spot_img_102",
+      "class_name": "Tomato_Septoria_leaf_spot",
+      "skeleton_pixels": 1393,
+      "median_distance_px": 24.233104705810547,
+      "raw_completeness": 0.6913205100769246,
+      "image_size": 256
+    },
+    {
+      "stem": "Tomato_Septoria_leaf_spot_img_112",
+      "class_name": "Tomato_Septoria_leaf_spot",
+      "skeleton_pixels": 2393,
+      "median_distance_px": 33.42500305175781,
+      "raw_completeness": 0.7619277164463105,
+      "image_size": 256
+    },
+    {
+      "stem": "Tomato_healthy_img_0",
+      "class_name": "Tomato_healthy",
+      "skeleton_pixels": 1912,
+      "median_distance_px": 31.514999389648438,
+      "raw_completeness": 0.6725673742304493,
+      "image_size": 256
+    },
+    {
+      "stem": "Tomato_healthy_img_103",
+      "class_name": "Tomato_healthy",
+      "skeleton_pixels": 1988,
+      "median_distance_px": 41.47930145263672,
+      "raw_completeness": 1.175385450330408,
+      "image_size": 256
+    },
+    {
+      "stem": "Tomato__Tomato_YellowLeaf__Curl_Virus_img_10",
+      "class_name": "Tomato__Tomato_YellowLeaf__Curl_Virus",
+      "skeleton_pixels": 1011,
+      "median_distance_px": 22.920000076293945,
+      "raw_completeness": 0.3029451443233249,
+      "image_size": 256
+    },
+    {
+      "stem": "Tomato__Tomato_YellowLeaf__Curl_Virus_img_104",
+      "class_name": "Tomato__Tomato_YellowLeaf__Curl_Virus",
+      "skeleton_pixels": 1594,
+      "median_distance_px": 27.621253967285156,
+      "raw_completeness": 0.4043918364030332,
+      "image_size": 256
+    }
+  ]
+}
