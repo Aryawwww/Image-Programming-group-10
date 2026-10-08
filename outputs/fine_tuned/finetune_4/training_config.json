@@ -1,0 +1,62 @@
+{
+  "architecture": "MobileNetV3Small",
+  "source_checkpoint": "/Users/alicia/Desktop/IPPR/Image-Programming-group-10/outputs/frozen/best_frozen_model.keras",
+  "backbone": "MobileNetV3Small",
+  "trainable_blocks": [
+    "expanded_conv_5",
+    "expanded_conv_6",
+    "expanded_conv_7",
+    "expanded_conv_8",
+    "expanded_conv_9",
+    "expanded_conv_10"
+  ],
+  "unfreeze_blocks": 6,
+  "image_size": [
+    224,
+    224
+  ],
+  "batch_size": 16,
+  "maximum_epochs": 50,
+  "epochs_completed": 38,
+  "learning_rate": 1e-05,
+  "early_stopping_patience": 10,
+  "seed": 42,
+  "class_indices": {
+    "Tomato_Bacterial_spot": 0,
+    "Tomato_Late_blight": 1,
+    "Tomato_Septoria_leaf_spot": 2,
+    "Tomato__Tomato_YellowLeaf__Curl_Virus": 3,
+    "Tomato_healthy": 4
+  },
+  "shared_dataset_directory": "/Users/alicia/Desktop/IPPR/Image-Programming-group-10/dataset",
+  "dataset_counts": {
+    "train": {
+      "Tomato_Bacterial_spot": 600,
+      "Tomato_Late_blight": 600,
+      "Tomato_Septoria_leaf_spot": 600,
+      "Tomato__Tomato_YellowLeaf__Curl_Virus": 600,
+      "Tomato_healthy": 600
+    },
+    "validation": {
+      "Tomato_Bacterial_spot": 75,
+      "Tomato_Late_blight": 75,
+      "Tomato_Septoria_leaf_spot": 75,
+      "Tomato__Tomato_YellowLeaf__Curl_Virus": 75,
+      "Tomato_healthy": 75
+    },
+    "test": {
+      "Tomato_Bacterial_spot": 75,
+      "Tomato_Late_blight": 75,
+      "Tomato_Septoria_leaf_spot": 75,
+      "Tomato__Tomato_YellowLeaf__Curl_Virus": 75,
+      "Tomato_healthy": 75
+    }
+  },
+  "best_validation_loss_epoch": 28,
+  "best_validation_loss": 0.010889358818531036,
+  "validation_accuracy_at_best_loss": 0.9973333477973938,
+  "best_validation_accuracy_epoch": 10,
+  "best_validation_accuracy": 1.0,
+  "training_seconds": 708.73531525,
+  "checkpoint": "best_finetuned_model.keras"
+}
