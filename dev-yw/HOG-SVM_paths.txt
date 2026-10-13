@@ -1,0 +1,25 @@
+HOG-SVM 资源路径。本文件只记位置。npy 和 npz 在磁盘上，不在这次提交里。
+
+分类器系数
+E:\IT\Projects\42177 Image ProcessingAndPatternRecognition\dev-yw\dev-yw\06_Oct_HOG_HSV_pipeline\HOG-SVM\robustness\outputs\model_cache.npz
+说明：同目录 model_cache.txt
+快捷方式：E:\IT\Projects\42177 Image ProcessingAndPatternRecognition\plantvillage_s4_full\SVM.lnk
+快捷方式说明：E:\IT\Projects\42177 Image ProcessingAndPatternRecognition\plantvillage_s4_full\SVM.txt
+
+特征与超参
+代码：E:\IT\Projects\42177 Image ProcessingAndPatternRecognition\dev-yw\dev-yw\06_Oct_HOG_HSV_pipeline\vein_hog
+冻结超参：E:\IT\Projects\42177 Image ProcessingAndPatternRecognition\dev-yw\dev-yw\06_Oct_HOG_HSV_pipeline\outputs\search_s4\winner.json
+训练缓存：E:\IT\Projects\42177 Image ProcessingAndPatternRecognition\dev-yw\dev-yw\06_Oct_HOG_HSV_pipeline\outputs\cache\train_features.npz
+整库 HOG：E:\IT\Projects\42177 Image ProcessingAndPatternRecognition\plantvillage_s4_full\hog.npy
+整库 HSV：E:\IT\Projects\42177 Image ProcessingAndPatternRecognition\plantvillage_s4_full\hsv.npy
+
+验证集
+划分表：E:\IT\Projects\42177 Image ProcessingAndPatternRecognition\dev-yw\dev-yw\06_Oct_HOG_HSV_pipeline\vein_hog\data\split_map.csv
+图像：E:\IT\Projects\42177 Image ProcessingAndPatternRecognition\dev-yw-main-ref\dataset\validation
+
+鲁棒性测试
+代码：E:\IT\Projects\42177 Image ProcessingAndPatternRecognition\dev-yw\dev-yw\06_Oct_HOG_HSV_pipeline\HOG-SVM\robustness
+图：E:\IT\Projects\42177 Image ProcessingAndPatternRecognition\dev-yw\dev-yw\06_Oct_HOG_HSV_pipeline\HOG-SVM\robustness\outputs\figures
+
+另一份模型
+报告第 10 轮：E:\IT\Projects\42177 Image ProcessingAndPatternRecognition\dev-yw\dev-yw\06_Oct_HOG_HSV_pipeline\outputs\fit\selected_model\linear.npz
