@@ -1,0 +1,9 @@
+,precision,recall,f1-score,support
+Tomato_healthy,0.0,0.0,0.0,75.0
+Tomato_Late_blight,1.0,0.08,0.14814814814814814,75.0
+Tomato_Septoria_leaf_spot,0.0,0.0,0.0,75.0
+Tomato__Tomato_YellowLeaf__Curl_Virus,0.0,0.0,0.0,75.0
+Tomato_Bacterial_spot,0.2032520325203252,1.0,0.33783783783783783,75.0
+accuracy,0.216,0.216,0.216,0.216
+macro avg,0.24065040650406502,0.21600000000000003,0.09719719719719719,375.0
+weighted avg,0.24065040650406505,0.216,0.0971971971971972,375.0

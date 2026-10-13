@@ -1,0 +1,20 @@
+Experiment: Batch Size Tuning - Batch 16
+
+Max epochs: 50
+Actual epochs: 17
+Learning rate: 0.001
+Dropout: 0
+Batch size: 16
+
+Best validation loss: 0.233121
+Best validation-loss epoch: 7
+Validation accuracy at best val-loss epoch: 0.914667
+Highest validation accuracy: 0.922667
+Highest validation-accuracy epoch: 13
+
+Test accuracy: 0.917333
+Test macro precision: 0.919009
+Test macro recall: 0.917333
+Test macro F1: 0.916582
+
+Total pipeline runtime: 13:40.49

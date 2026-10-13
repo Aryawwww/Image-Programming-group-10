@@ -1,0 +1,20 @@
+Experiment: Dropout Tuning - Dropout 0.5
+
+Max epochs: 50
+Actual epochs: 31
+Learning rate: 0.001
+Dropout: 0.5
+Batch size: 64
+
+Best validation loss: 0.144672
+Best validation-loss epoch: 21
+Validation accuracy at best val-loss epoch: 0.949333
+Highest validation accuracy: 0.949333
+Highest validation-accuracy epoch: 21
+
+Test accuracy: 0.946667
+Test macro precision: 0.947512
+Test macro recall: 0.946667
+Test macro F1: 0.946610
+
+Total pipeline runtime: 47:48.96

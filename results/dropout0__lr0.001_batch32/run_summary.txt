@@ -1,0 +1,20 @@
+Experiment: Baseline
+
+Max epochs: 50
+Actual epochs: 19
+Learning rate: 0.001
+Dropout: 0
+Batch size: 32
+
+Best validation loss: 0.217538
+Best validation-loss epoch: 9
+Validation accuracy at best val-loss epoch: 0.922667
+Highest validation accuracy: 0.930667
+Highest validation-accuracy epoch: 15
+
+Test accuracy: 0.917333
+Test macro precision: 0.920250
+Test macro recall: 0.917333
+Test macro F1: 0.917932
+
+Total pipeline runtime: 26:57.11

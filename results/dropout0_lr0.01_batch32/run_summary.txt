@@ -1,0 +1,20 @@
+Experiment: Learning Rate Tuning - LR 0.01
+
+Max epochs: 50
+Actual epochs: 13
+Learning rate: 0.01
+Dropout: 0
+Batch size: 32
+
+Best validation loss: 1.600946
+Best validation-loss epoch: 3
+Validation accuracy at best val-loss epoch: 0.210667
+Highest validation accuracy: 0.210667
+Highest validation-accuracy epoch: 3
+
+Test accuracy: 0.216000
+Test macro precision: 0.240650
+Test macro recall: 0.216000
+Test macro F1: 0.097197
+
+Total pipeline runtime: 09:08.33
