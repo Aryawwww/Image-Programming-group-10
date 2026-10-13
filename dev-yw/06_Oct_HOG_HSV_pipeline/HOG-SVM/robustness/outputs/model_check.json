@@ -1,0 +1,8 @@
+{
+  "n": 375,
+  "matched_predicted_class": 375,
+  "macro_f1": 0.7341147721741124,
+  "winner_round": 99,
+  "hsv_alpha": 0.45,
+  "winner_text": "{\n  \"search\": \"S4\",\n  \"winner_round\": 99,\n  \"hog\": \"ori12-cell16\",\n  \"orientations\": 12,\n  \"pixels_per_cell\": 16,\n  \"cells_per_block\": 2,\n  \"block_norm\": \"L2-Hys\",\n  \"hog_dim\": 10800,\n  \"hsv_dim\": 27,\n  \"hsv_alpha\": 0.45,\n  \"hsv_reference\": 0.4031262697503271,\n  \"hsv_floor\": 0.25,\n  \"C\": 1.0,\n  \"rule\": \"max select min_class_auc, then mean, then fewer HOG numbers, then nearer the HSV reference, then lower round\",\n  \"select_fraction\": 0.2,\n  \"seed\": 0,\n  \"test_was_read\": false,\n  \"validation_was_read\": false,\n  \"replaces_report_round\": false\n}"
+}

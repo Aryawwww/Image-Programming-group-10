@@ -1,0 +1,10 @@
+{
+  "severity": "integer 0..100, step 1. 0 copies the input. 100 has no recognizable original image.",
+  "seed": "sha256(category|severity|image_sha256), first 8 bytes, little-endian",
+  "random_noise": "(1-t)*image + t*U(0,255); t=1 is U only",
+  "gaussian_blur": "GaussianBlur sigma = 1.5 * t/(1-t); t=1 is the per-channel mean",
+  "poisson_noise": "Poisson((1-t)*pixel + t*8.0), clipped to uint8",
+  "multiplicative_noise": "image * exp(0.15 * t/(1-t) * Z); t=1 is U(0,255)",
+  "salt_pepper": "each pixel becomes 255 or 0 with probability t/2 each; t=1 replaces every pixel",
+  "bilateral": "bilateralFilter sigmaColor = 10.0 * t/(1-t), sigmaSpace = 2.0 * t/(1-t), diameter capped at 9; t=1 is the per-channel mean"
+}

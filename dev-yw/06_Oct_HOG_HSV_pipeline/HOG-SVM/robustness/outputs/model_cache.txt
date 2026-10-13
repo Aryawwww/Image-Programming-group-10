@@ -1,0 +1,16 @@
+SVM.lnk 与 model_cache.npz 是同一份 S4 第 99 轮线性 SVM 系数的两端。
+
+这里是系数文件：
+E:\IT\Projects\42177 Image ProcessingAndPatternRecognition\dev-yw\dev-yw\06_Oct_HOG_HSV_pipeline\HOG-SVM\robustness\outputs\model_cache.npz
+
+快捷方式在：
+E:\IT\Projects\42177 Image ProcessingAndPatternRecognition\plantvillage_s4_full\SVM.lnk
+
+系数是 2026-10-13 按冻结超参重放的 S4 第 99 轮：12 方向，16 像素胞元，2×2 块，L2-Hys，HSV 权重 0.45，C=1。形状 5×10827，其中 10800 维是 HOG，27 维是 HSV。当时与 validation_scores.csv 的 375 张预测一致，macro-F1 为 0.734115。
+
+plantvillage_s4_full 里的 hog.npy（54305×10800）、hsv.npy（54305×27）、status.npy 是整库彩色图的特征表。
+报告第 10 轮的权重在 dev-yw\dev-yw\06_Oct_HOG_HSV_pipeline\outputs\fit\selected_model\linear.npz，形状 5×34623。
+
+鲁棒性脚本见到 SVM.lnk 就加载本文件，不再重拟合，不再对照验证集。
+快捷方式旁边有同一份说明：plantvillage_s4_full\SVM.txt
+本文件是这份系数的存放处，删掉它，快捷方式就失效。
