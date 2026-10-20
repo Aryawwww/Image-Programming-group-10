@@ -16,23 +16,37 @@ CATEGORIES = (
     "bilateral",
 )
 
+# The three corruptions the S6 performance record is required to contain.
+REQUIRED_CATEGORIES = (
+    "gaussian_noise",
+    "gaussian_blur",
+    "brightness",
+)
+
 CATEGORY_EN = {
     "random_noise": "Random noise",
+    "gaussian_noise": "Gaussian noise",
     "gaussian_blur": "Gaussian blur",
     "poisson_noise": "Poisson noise",
     "multiplicative_noise": "Multiplicative noise",
     "salt_pepper": "Salt and pepper",
     "bilateral": "Bilateral filter",
+    "brightness": "Brightness",
 }
 
 CATEGORY_ZH = {
     "random_noise": "随机噪声",
+    "gaussian_noise": "高斯噪声",
     "gaussian_blur": "高斯模糊",
     "poisson_noise": "泊松噪声",
     "multiplicative_noise": "乘性噪声",
     "salt_pepper": "椒盐噪声",
     "bilateral": "双边滤波",
+    "brightness": "亮度",
 }
+
+# sigma = GAUSSIAN_NOISE_SIGMA_SCALE * t/(1-t). Severity 100 ignores the image.
+GAUSSIAN_NOISE_SIGMA_SCALE = 25.0
 
 # sigma = GAUSSIAN_SIGMA_SCALE * t / (1 - t), t = severity / 100.
 GAUSSIAN_SIGMA_SCALE = 1.5
@@ -68,8 +82,12 @@ def _rng(category: str, severity: float, image_sha256: str) -> np.random.Generat
     return np.random.default_rng(seed)
 
 
+def _accepted(category: str) -> bool:
+    return category in CATEGORIES or category in REQUIRED_CATEGORIES
+
+
 def _check(image: np.ndarray, category: str, severity: float) -> np.ndarray:
-    if category not in CATEGORIES:
+    if not _accepted(category):
         raise ValueError(f"unknown corruption: {category}")
     _severity_value(severity)
     array = np.asarray(image)
@@ -97,6 +115,25 @@ def _bilateral_diameter(sigma_space: float) -> int:
     if raw % 2 == 0:
         raw += 1
     return min(raw, BILATERAL_D_MAX)
+
+
+def _gaussian_noise(image: np.ndarray, severity: int, rng: np.random.Generator) -> np.ndarray:
+    """image + 25 * t/(1-t) * Z. Severity 100 is N(128, 64) and ignores the image."""
+    if severity == 100:
+        drawn = rng.normal(128.0, 64.0, size=image.shape)
+        return np.clip(np.rint(drawn), 0, 255).astype(np.uint8)
+    sigma = GAUSSIAN_NOISE_SIGMA_SCALE * _blow(severity)
+    mixed = image.astype(np.float64) + sigma * rng.standard_normal(image.shape)
+    return np.clip(np.rint(mixed), 0, 255).astype(np.uint8)
+
+
+def _brightness(image: np.ndarray, severity: int) -> np.ndarray:
+    """(1-t)*image + t*255. Severity 100 is white."""
+    if severity == 100:
+        return np.full(image.shape, 255, dtype=np.uint8)
+    t = severity / 100.0
+    mixed = (1.0 - t) * image.astype(np.float64) + t * 255.0
+    return np.clip(np.rint(mixed), 0, 255).astype(np.uint8)
 
 
 def _random_noise(image: np.ndarray, severity: int, rng: np.random.Generator) -> np.ndarray:
@@ -156,6 +193,65 @@ def _bilateral(image: np.ndarray, severity: int) -> np.ndarray:
     return cv2.bilateralFilter(image, diameter, sigma_color, sigma_space)
 
 
+def _bgr(image: np.ndarray) -> np.ndarray:
+    array = np.asarray(image)
+    if array.dtype != np.uint8 or array.ndim != 3 or array.shape[2] != 3:
+        raise ValueError(f"expected uint8 BGR image, got shape {array.shape} dtype {array.dtype}")
+    return np.ascontiguousarray(array)
+
+
+def _node_rng(sigma: float, image_sha256: str) -> np.random.Generator:
+    """Seed for one test-set noise draw. Separate from the 0..100 severity seed."""
+    digest = hashlib.sha256(f"gaussian_noise|{float(sigma):.2f}|{image_sha256}".encode("utf-8")).digest()
+    return np.random.default_rng(int.from_bytes(digest[:8], "little"))
+
+
+def gaussian_noise_sigma(image: np.ndarray, sigma: float, image_sha256: str) -> np.ndarray:
+    """Add N(0, sigma) on pixels scaled to [0, 1], then return uint8.
+
+    sigma is the standard deviation on that unit interval. 0 copies the input.
+    This is not the severity curve in _gaussian_noise.
+    """
+    source = _bgr(image)
+    sigma = float(sigma)
+    if not np.isfinite(sigma) or sigma < 0.0:
+        raise ValueError(f"sigma {sigma} is not a non-negative finite number")
+    if sigma == 0.0:
+        return source.copy()
+    scaled = source.astype(np.float64) / 255.0
+    noisy = scaled + _node_rng(sigma, str(image_sha256)).normal(0.0, sigma, size=source.shape)
+    return np.clip(np.rint(np.clip(noisy, 0.0, 1.0) * 255.0), 0, 255).astype(np.uint8)
+
+
+def opencv_blur_sigma(ksize: int) -> float:
+    """Sigma OpenCV uses when sigmaX is 0 and the kernel side is ksize."""
+    return 0.3 * ((int(ksize) - 1) * 0.5 - 1.0) + 0.8
+
+
+def gaussian_blur_ksize(image: np.ndarray, ksize: int) -> np.ndarray:
+    """Gaussian blur with an odd kernel. sigmaX=0 lets OpenCV set sigma from ksize."""
+    source = _bgr(image)
+    side = int(ksize)
+    if side not in (3, 5):
+        raise ValueError(f"kernel must be 3 or 5, got {ksize}")
+    return cv2.GaussianBlur(source, (side, side), sigmaX=0)
+
+
+def brightness_factor(image: np.ndarray, factor: float) -> np.ndarray:
+    """Multiply BGR pixels by factor and clip to uint8. 1.0 copies the input.
+
+    This matches PIL ImageEnhance.Brightness, which blends the image with black.
+    It is not the severity curve in _brightness.
+    """
+    source = _bgr(image)
+    factor = float(factor)
+    if not np.isfinite(factor) or factor < 0.0:
+        raise ValueError(f"brightness factor {factor} is not a non-negative finite number")
+    if factor == 1.0:
+        return source.copy()
+    return np.clip(np.rint(source.astype(np.float64) * factor), 0, 255).astype(np.uint8)
+
+
 def apply_corruption(image: np.ndarray, category: str, severity: float, image_sha256: str) -> np.ndarray:
     """Return a uint8 BGR image. Severity 0 is a copy of the input."""
     source = _check(image, category, severity)
@@ -163,6 +259,10 @@ def apply_corruption(image: np.ndarray, category: str, severity: float, image_sh
     if level == 0:
         return source.copy()
     rng = _rng(category, level, str(image_sha256))
+    if category == "gaussian_noise":
+        return _gaussian_noise(source, int(level), rng)
+    if category == "brightness":
+        return _brightness(source, int(level))
     if category == "random_noise":
         return _random_noise(source, level, rng)
     if category == "gaussian_blur":
@@ -181,6 +281,11 @@ def parameter_record() -> dict[str, object]:
     return {
         "severity": "integer 0..100, step 1. 0 copies the input. 100 has no recognizable original image.",
         "seed": "sha256(category|severity|image_sha256), first 8 bytes, little-endian",
+        "gaussian_noise": (
+            f"image + {GAUSSIAN_NOISE_SIGMA_SCALE} * t/(1-t) * Z; "
+            "t=1 is N(128, 64) and ignores the image"
+        ),
+        "brightness": "(1-t)*image + t*255; t=1 is white",
         "random_noise": "(1-t)*image + t*U(0,255); t=1 is U only",
         "gaussian_blur": f"GaussianBlur sigma = {GAUSSIAN_SIGMA_SCALE} * t/(1-t); t=1 is the per-channel mean",
         "poisson_noise": f"Poisson((1-t)*pixel + t*{POISSON_FLAT}), clipped to uint8",
