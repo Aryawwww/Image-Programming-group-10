@@ -1,0 +1,99 @@
+HOG-SVM 核心代码位置。只记行号，不抄代码。怎么跑见 HOG-SVM_run.txt，局限见 HOG-SVM_limits.txt。
+
+行号按 2026-10-14 的文件计，从函数或常量的第一行到最后一行，含定义行。改文件后行号会移动。
+路径相对于
+E:\IT\Projects\42177 Image ProcessingAndPatternRecognition\dev-yw\dev-yw\06_Oct_HOG_HSV_pipeline
+
+鲁棒性
+HOG-SVM\robustness\corrupt.py
+    10-17    六类扰动的名称
+    37-46    高斯、泊松、乘性、双边的强度常数
+    52-68    严重度取值和随机种子
+    102-109  随机噪声
+    112-117  高斯模糊
+    120-125  泊松噪声
+    128-135  乘性噪声
+    138-145  椒盐噪声
+    148-156  双边滤波
+    159-176  扰动入口
+    179-194  写出参数记录
+
+HOG-SVM\robustness\model.py
+    33-36    流水线根目录，以及 S4 的 12 方向、16 像素、10800 维
+    45-75    快捷方式位置和解析
+    78-91    一张图的 HOG 与 HSV
+    94-99    读图、加扰动、再提特征
+    102-113  分开标准化、HSV 乘权重、线性打分
+    140-147  读系数并核对宽度和 0.45
+    150-157  读 375 行验证表
+    160-220  快捷方式缺失时按冻结超参重放拟合
+
+HOG-SVM\robustness\run_robustness.py
+    31-32    干净对照用的类目，进程数 4
+    63-70    跳过已完成的等级表，删掉不完整的表
+    121-151  与 validation_scores.csv 对照
+    167-209  有快捷方式就加载，否则重放并核对
+    252-298  六类、严重度 0 到 100
+    301-319  命令行：--plot-only、--check-only
+
+HOG-SVM\robustness\plot_robustness.py
+    32-39    小提琴、混淆矩阵、图例的严重度，以及双边图例的步长和 16384 画布
+    94-135   扰动–性能曲线
+    138-155  小提琴图
+    176-194  混淆矩阵对比和差值矩阵
+    217-264  双边滤波 16384 图例
+    267-291  其余五类图例
+    318-341  按类目写五张图
+
+被这些入口调用的流水线代码
+vein_hog\src\vein_hog\search_s4.py
+    46-49    L2-Hys、2×2 块、SGD 迭代和容差
+    121-143  S4 的 HOG。叶外置零，平方根压缩
+    151-160  一批图的 HOG
+    272-277  从训练缓存读取 HSV
+
+vein_hog\src\vein_hog\hsv.py
+    9        HSV 维度 27
+    12-28    16 个 H 箱、8 个 S 箱，以及 H、S、V 均值
+
+vein_hog\src\vein_hog\extract.py
+    20-21    边长 256，叶内收缩半径 8
+    24-32    缩放到 256 并取叶掩膜
+    70-74    读 BGR
+
+vein_hog\src\vein_hog\mask.py
+    9-35     叶掩膜
+
+vein_hog\src\vein_hog\validate_s4.py
+    39-41    冻结轮次 99、ori12-cell16、HSV 权重 0.45
+    44-53    拒绝不是这份冻结记录的 winner.json
+    67-181   验证集打分。不保存系数，不改 winner.json
+
+vein_hog\src\vein_hog\search_s1.py
+    45-46    C=1，拟合用训练行的 80%（留出 0.2）
+
+vein_hog\src\vein_hog\rounds.py
+    5-8      报告轮的 C、HSV 权重、学习曲线比例、种子 0
+    11-20    16 格
+    23-25    SGD alpha = 1/(C×样本数)
+
+vein_hog\src\vein_hog\fit_rounds.py
+    24-29    第 5 步的门，以及事先指定的 C=1、HSV 权重 0.25
+    194-340  拟合 16 格并写出报告轮
+
+vein_hog\src\vein_hog\hog.py
+    9-10     报告轮描述子长度 34596，边长 256
+    13-38    报告轮 HOG。不是 S4 的 10800 维
+
+vein_hog\src\vein_hog\run.py
+    44-59    缓存 train 与 test，拟合报告轮，不打开验证集
+
+vein_hog\src\vein_hog\s4_pipeline_output.py
+    72-75    显示用的 gamma、winner.json、默认输出目录
+    114-123  写出 10827 维特征行。这一行还没标准化，不是系数
+    135-180  HOG 图和 H、S、V 横条
+    361-380  命令行：输入路径和 --out
+
+vein_hog\src\vein_hog\hsv_window.py
+    25-27    窗权重的下限 0.25 和上限 1
+    198-216  只在训练集上估计窗权重

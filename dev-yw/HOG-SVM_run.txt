@@ -1,0 +1,90 @@
+HOG-SVM 执行方式。本文件只写怎么跑。行号在 HOG-SVM_core_lines.txt，局限在 HOG-SVM_limits.txt。
+
+工作目录
+E:\IT\Projects\42177 Image ProcessingAndPatternRecognition\dev-yw\dev-yw\06_Oct_HOG_HSV_pipeline
+
+虚拟环境
+解释器：同目录 .venv\Scripts\python.exe
+版本：Python 3.13.9
+依赖清单：vein_hog\requirements.txt
+环境已经建好。一次测试不需要重装。
+
+只有 .venv 不存在时才重建：
+
+    E:\IT\Python\Python313\python.exe -m venv .venv
+    .\.venv\Scripts\python.exe -m pip install -r vein_hog\requirements.txt
+
+每次新开 PowerShell，先进入工作目录，再设 PYTHONPATH。vein_hog 靠这个变量导入。鲁棒性脚本旁的 corrupt.py 和 model.py 不用写进 PYTHONPATH：直接运行脚本时，Python 会把脚本所在目录放进导入路径。
+
+    Set-Location -LiteralPath "E:\IT\Projects\42177 Image ProcessingAndPatternRecognition\dev-yw\dev-yw\06_Oct_HOG_HSV_pipeline"
+    $env:PYTHONPATH = (Resolve-Path -LiteralPath "vein_hog\src").Path
+    $py = ".\.venv\Scripts\python.exe"
+
+标准入口：鲁棒性测试
+没有位置参数。严重度、扰动类目和进程数都写在代码里，不从命令行传入。
+进程数是 4。六类扰动各测严重度 0 到 100，步长 1。
+输出固定在 HOG-SVM\robustness\outputs。没有 --out。
+
+沿用已有系数，做完扫描和作图：
+
+    & $py "HOG-SVM\robustness\run_robustness.py"
+
+只加载系数并准备干净预测，不做扰动扫描：
+
+    & $py "HOG-SVM\robustness\run_robustness.py" --check-only
+
+只用已有 levels 表格重画图，不重新打分：
+
+    & $py "HOG-SVM\robustness\run_robustness.py" --plot-only
+
+两个开关同时给出时，--plot-only 先生效，不会加载模型。
+正常结束打印 ROBUSTNESS_DONE。只检查时打印 ROBUSTNESS_CHECK_OK。
+
+系数从哪里来
+若存在
+E:\IT\Projects\42177 Image ProcessingAndPatternRecognition\plantvillage_s4_full\SVM.lnk
+脚本解析快捷方式，加载 model_cache.npz，不再拟合，也不再对照 validation_scores.csv。
+快捷方式不存在时，才按 S4 第 99 轮重放一次拟合，并要求 375 张预测与 validation_scores.csv 的 predicted_class 一致。对不上会删除刚写出的 model_cache.npz，并以 ROBUSTNESS_FAILED 退出。
+已有完整的 levels\<类目>\<三位严重度>.csv（375 行）会跳过。行数不是 375 的文件会被删掉重算。严重度 0 复制干净预测，不再加扰动。
+
+测试
+扰动端点。要在 robustness 目录里跑，pytest 才能导入 corrupt：
+
+    Set-Location -LiteralPath "E:\IT\Projects\42177 Image ProcessingAndPatternRecognition\dev-yw\dev-yw\06_Oct_HOG_HSV_pipeline\HOG-SVM\robustness"
+    & "..\..\.venv\Scripts\python.exe" -m pytest tests
+
+流水线单元测试。pytest 使用 vein_hog\pyproject.toml 里的 pythonpath = src：
+
+    Set-Location -LiteralPath "E:\IT\Projects\42177 Image ProcessingAndPatternRecognition\dev-yw\dev-yw\06_Oct_HOG_HSV_pipeline\vein_hog"
+    & "..\.venv\Scripts\python.exe" -m pytest
+
+同一环境里的其他入口
+下面的命令也要先设好上面的 PYTHONPATH，并使用同一个 $py。
+
+报告轮。16 格只变 C 和 HSV 权重，验证集保持关闭：
+
+    & $py -m vein_hog.run
+
+事先指定的报告轮是 C=1、HSV 权重 0.25，也就是第 10 轮。需要 outputs\checks\vein_gate.json。只缓存 train 和 test。
+
+训练集上的 HSV 窗权重。只读训练集，写出 outputs\hsv_window\strength.json，不重训，也不改 S4 的 0.45：
+
+    & $py -m vein_hog.hsv_window
+
+S4 第 99 轮在 375 张验证图上打一次分。没有参数。不改 winner.json，不保存系数，不把验证特征写入 outputs\cache：
+
+    & $py -m vein_hog.validate_s4
+
+这一分已经记过。不要拿它再选超参。
+
+把冻结的 S4 胜者画成 HOG 以及分开的 H、S、V。默认输出 outputs\Pipeline_HOG+HSV。相对路径的 --out 从流水线根目录算，不从 shell 的当前目录算：
+
+    & $py -m vein_hog.s4_pipeline_output "一张图或一个文件夹" --out "outputs\Pipeline_HOG+HSV"
+
+路径含空格时，把整段路径放在一对引号里。
+
+不要作为标准入口
+不要重跑 search_s4 来改 winner.json。
+不要运行 vein_hog.validate。测试 macro-F1 和训练差距没有达到第 5 步的门。
+不要运行 kept_Iris_Inspiration_vein_picture.py。它是保留的画面，不是流水线入口。
+plantvillage_s4_full\run_color.py 是整库颜色图的另一次拟合。它不替换课程上的 S4 第 99 轮，也不替换报告第 10 轮。
