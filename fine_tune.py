@@ -42,7 +42,7 @@ def parse_args():
 		help="Trial folder name; defaults to a timestamp.",
 	)
 	parser.add_argument("--epochs", type=int, default=50)
-	parser.add_argument("--batch-size", type=int, default=32)
+	parser.add_argument("--batch-size", type=int, default=16)
 	parser.add_argument("--learning-rate", type=float, default=1e-5)
 	parser.add_argument(
 		"--unfreeze-blocks",

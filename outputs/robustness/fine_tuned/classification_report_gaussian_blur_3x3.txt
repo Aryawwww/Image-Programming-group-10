@@ -1,0 +1,11 @@
+                                       precision    recall  f1-score   support
+
+                Tomato_Bacterial_spot     1.0000    1.0000    1.0000        75
+                   Tomato_Late_blight     0.9865    0.9733    0.9799        75
+            Tomato_Septoria_leaf_spot     1.0000    0.8533    0.9209        75
+Tomato__Tomato_YellowLeaf__Curl_Virus     0.8929    1.0000    0.9434        75
+                       Tomato_healthy     0.9359    0.9733    0.9542        75
+
+                             accuracy                         0.9600       375
+                            macro avg     0.9630    0.9600    0.9597       375
+                         weighted avg     0.9630    0.9600    0.9597       375

@@ -1,0 +1,6 @@
+,Tomato_Bacterial_spot,Tomato_Late_blight,Tomato_Septoria_leaf_spot,Tomato__Tomato_YellowLeaf__Curl_Virus,Tomato_healthy
+Tomato_Bacterial_spot,74,1,0,0,0
+Tomato_Late_blight,0,69,6,0,0
+Tomato_Septoria_leaf_spot,0,0,75,0,0
+Tomato__Tomato_YellowLeaf__Curl_Virus,0,1,1,72,1
+Tomato_healthy,0,2,3,2,68
