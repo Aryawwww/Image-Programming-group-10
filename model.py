@@ -1,3 +1,5 @@
+from xml.parsers.expat import model
+
 import tensorflow as tf
 
 def build_model(image_size):
@@ -6,6 +8,9 @@ def build_model(image_size):
 
         # Adding input layer 
         tf.keras.layers.Input(shape=(image_size[0], image_size[1], 3)), 
+
+        # Rescaling input
+        tf.keras.layers.Rescaling(1./255),
 
         # Adding alternating convolutional and pooling layers 
         tf.keras.layers.Conv2D(32, (3,3), activation='relu'),
@@ -21,7 +26,7 @@ def build_model(image_size):
         # Adding hidden layer 
         tf.keras.layers.Dense(64, activation='relu'), 
 
-        # Adding dropout to reduce overfitting
+        # Adding dropout for regularisation
         tf.keras.layers.Dropout(0.5),
 
         # Adding output layer; 5 represents the 5 classes
@@ -30,13 +35,15 @@ def build_model(image_size):
 
     return model
 
-def train_model(model, train_generator, val_generator, num_epochs, best_model_file):
+def train_model(model, train_dataset, val_dataset, num_epochs, best_model_file):
 
     # Compiling the model
+    optimizer = tf.keras.optimizers.Adam(learning_rate=0.001)
+
     model.compile(
-        optimizer=tf.keras.optimizers.Adam(learning_rate=0.001),
-        loss="sparse_categorical_crossentropy",
-        metrics=["accuracy"]
+    optimizer=optimizer,
+    loss="sparse_categorical_crossentropy",
+    metrics=["accuracy"]
     )
 
     # Configuring early stopping 
@@ -55,8 +62,8 @@ def train_model(model, train_generator, val_generator, num_epochs, best_model_fi
 
     # Passing both callbacks into training loop, and fitting training data to model 
     history = model.fit(
-        train_generator,
-        validation_data=val_generator,
+        train_dataset,             
+        validation_data=val_dataset,    
         epochs=num_epochs,
         callbacks=[early_stopping, model_checkpoint] 
     )  
